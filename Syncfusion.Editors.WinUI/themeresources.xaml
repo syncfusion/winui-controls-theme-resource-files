@@ -1,0 +1,477 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!--  Theme dictionaries  -->
+    <ResourceDictionary.ThemeDictionaries>
+
+        <ResourceDictionary x:Key="Light">
+            <!--  Resources and color keys for DropDownFlyoutPresenter used in drop down controls  -->
+            <x:Double x:Key="SyncfusionAcceptButtonSeparatorWidth">0</x:Double>
+            <SolidColorBrush x:Key="SyncfusionDropDownFlyoutPresenterBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownFlyoutPresenterBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            
+            <!--  Color keys for SfDropDownBase like DropDownColorPicker and DropDownColorPalette control  -->
+            <Thickness x:Key="SyncfusionDropDownButtonBorderThickness">0</Thickness>
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackground"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <!--  Color keys for SpinnerView / DateTimeSpinnerBase  -->
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewHeaderForeground"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewHeaderForeground"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundSelected"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPressed"
+                             Color="{StaticResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColor}"
+                             Opacity="0.4"/>
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundDisabled"
+                             Color="Transparent" />
+
+            <!--  Color keys for DatePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionDatePickerBackground"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionDatePickerBorderBrush"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionDatePickerForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+
+
+            <!--  Color keys for TimePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionTimePickerBackground"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimePickerBorderBrush"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimePickerForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+
+            <!-- Common Color keys for Date and time picker controls  -->
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundPointerOver"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundFocused"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushPointerOver"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushFocused"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <!--  Resources and color keys for ColorPalette controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPaletteBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemInnerBorderBrushPointerOver"
+                             Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPressed"
+                             Color="{StaticResource SystemChromeBlackHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+
+            <!--  Resources and color keys for ColorPicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerBorderBrush"
+                             Color="#CBCBCB" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBorderBrush"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionGradientEditorBorderBrush"
+                             Color="#CBCBCB" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBorderBrush"
+                             Color="Transparent" />
+
+            <!--  Resources and color keys for ColorPicker Toggle button  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushPointerOver"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundFocused"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="Dark">
+            <!--  Resources and color keys for DropDownFlyoutPresenter used in drop down controls  -->
+            <x:Double x:Key="SyncfusionAcceptButtonSeparatorWidth">0</x:Double>
+            <SolidColorBrush x:Key="SyncfusionDropDownFlyoutPresenterBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownFlyoutPresenterBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <!--  Color keys for SfDropDownBase like DropDownColorPicker and DropDownColorPalette control  -->
+            <Thickness x:Key="SyncfusionDropDownButtonBorderThickness">0</Thickness>
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackground"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <!--  Color keys for SpinnerView / DateTimeSpinnerBase  -->
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewHeaderForeground"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewHeaderForeground"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundSelected"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPressed"
+                             Color="{StaticResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColor}"
+                             Opacity="0.4"/>
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundDisabled"
+                             Color="Transparent" />
+
+            <!--  Color keys for DatePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionDatePickerBackground"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionDatePickerBorderBrush"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionDatePickerForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+
+
+            <!--  Color keys for TimePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionTimePickerBackground"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimePickerBorderBrush"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimePickerForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+            
+            <!-- Common Color keys for Date and time picker controls  -->
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundPointerOver"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundFocused"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushPointerOver"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushFocused"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <!--  Resources and color keys for ColorPalette controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPaletteBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemInnerBorderBrushPointerOver"
+                             Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPressed"
+                             Color="{StaticResource SystemChromeBlackHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBorderBrush"
+                             Color="Transparent" />
+
+            <!--  Resources and color keys for ColorPicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBorderBrush"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionGradientEditorBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <!--  Resources and color keys for ColorPicker Toggle button  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushPointerOver"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundFocused"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+        </ResourceDictionary>
+        
+        <ResourceDictionary x:Key="HighContrast">
+            <!--  Resources and color keys for DropDownFlyoutPresenter used in drop down controls  -->
+            <x:Double x:Key="SyncfusionAcceptButtonSeparatorWidth">1</x:Double>
+            <SolidColorBrush x:Key="SyncfusionDropDownFlyoutPresenterBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownFlyoutPresenterBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <!--  Color keys for SfDropDownBase like DropDownColorPicker and DropDownColorPalette control  -->
+            <Thickness x:Key="SyncfusionDropDownButtonBorderThickness">1</Thickness>
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackground"
+                             Color="{StaticResource SystemColorWindowColor}" />
+
+            <!--  Color keys for SpinnerView / DateTimeSpinnerBase  -->
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewHeaderForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewHeaderForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundSelected"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBackgroundSelected"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundDisabled"
+                             Color="Transparent" />
+
+            <!--  Color keys for DatePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionDatePickerBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionDatePickerBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDatePickerForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+
+            <!--  Color keys for TimePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionTimePickerBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimePickerBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimePickerForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <!-- Common Color keys for Date and time picker controls  -->
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundFocused"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundDisabled"
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushFocused"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+
+            <!--  Resources and color keys for ColorPalette controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPaletteBorderBrush"
+                             Color="{StaticResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemInnerBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPressed"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrush"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBorderBrush"
+                             Color="Transparent" />
+
+            <!--  Resources and color keys for ColorPicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerBorderBrush"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBorderBrush"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionGradientEditorBorderBrush"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+
+            <!--  Resources and color keys for ColorPicker Toggle button  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPointerOver"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushFocused"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundFocused"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundFocused"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+        </ResourceDictionary>
+        
+    </ResourceDictionary.ThemeDictionaries>
+
+    <!--Resources for DatePicker control-->
+    <Thickness x:Key="SyncfusionDatePickerBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionDatePickerPadding">0,-1</Thickness>
+
+
+    <!--Resources for TimePicker control-->
+    <Thickness x:Key="SyncfusionTimePickerBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionTimePickerPadding">0,-1</Thickness>
+
+    <!-- Common resources for Date and time picker control-->
+    <Thickness x:Key="SyncfusionPickerFocusedBorderThickness">2</Thickness>
+    <Thickness x:Key="SyncfusionPickerTextBoxHelperButtonPadding">0,0,-1,0</Thickness>
+
+    <!--Resources for SpinnerView / DateTimeSpinnerBase control-->
+    <Thickness x:Key="SyncfusionSpinnerViewBorderThickness">1</Thickness>
+    <x:Double x:Key="SyncfusionSpinnerViewHeaderMinHeight">40</x:Double>
+    <Thickness x:Key="SyncfusionSpinnerViewHeaderBorderThickness">0,0,0,1</Thickness>
+    <Thickness x:Key="SyncfusionSpinnerColumnViewHeaderBorderThickness">0,0,0,1</Thickness>
+
+    <!--Resources for SfDropDownBase control-->
+    <Thickness x:Key="SyncfusionDropDownBasePadding">4</Thickness>
+
+    <!--Resources for DropDownFlyoutPresenter control-->
+    <Thickness x:Key="SyncfusionDropDownFlyoutPresenterBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionDropDownFlyoutPresenterPadding">0</Thickness>
+    <x:Double x:Key="SyncfusionDropDownFlyoutPresenterAcceptDismissHostGridHeight">41</x:Double>
+    <x:Double x:Key="SyncfusionDropDownFlyoutPresenterButtonFontSize">16</x:Double>
+    <x:Double x:Key="SyncfusionDropDownFlyoutPresenterMinWidth">96</x:Double>
+    <x:Double x:Key="SyncfusionDropDownFlyoutPresenterMinHeight">40</x:Double>
+
+    <!--Resources for ColorPalette control-->
+    <Thickness x:Key="SyncfusionColorItemBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionColorItemBorderMargin">0.5</Thickness>
+    <Thickness x:Key="SyncfusionColorPaletteBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionColorPaletteButtonMargin">0,2,0,2</Thickness>
+    <Thickness x:Key="SyncfusionColorPaletteButtonBorderThickness">0</Thickness>
+    <Thickness x:Key="SyncfusionMoreColorsViewBorderThickness">0</Thickness>
+    <x:Double x:Key="SyncfusionColorPaletteButtonIconSize">24</x:Double>
+    
+    <!--Resources for ColorPicker control-->
+    <Thickness x:Key="SyncfusionColorPickerBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionColorPickerComboBoxBorderThickness">1</Thickness>
+
+</ResourceDictionary>
