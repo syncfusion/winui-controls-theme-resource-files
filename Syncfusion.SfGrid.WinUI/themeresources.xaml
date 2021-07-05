@@ -1,0 +1,1133 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <!--SfDataGrid-->
+            <SolidColorBrush x:Key="SyncfusionDataGridLineStroke" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridBackground" Color="Transparent"/>
+            <FontWeight x:Key="SyncfusionDataGridThemeFontWeight">Normal</FontWeight>
+
+            <!--SfDataGrid HeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForeground" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForegroundPointerOver" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForegroundPressed" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridSortIconForeground" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridSortIconForegroundPointerOver" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridSortIconForegroundPressed" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterIconForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionFilterToggelButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionFilterToggleButtonBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridHeaderCellFilterIconPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridHeaderCellFilterIconPressed" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--SfDataGrid StackedHeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionGridStackedHeaderCellControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGridStackedHeaderCellControlForeground" Color="{StaticResource SystemBaseMediumColor}"/>
+
+            <!--SfDataGrid GridCell-->
+            <SolidColorBrush x:Key="SyncfusionGridDetailsViewIndentCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Row Control-->
+            <SolidColorBrush x:Key="SyncfusionDataGridRowBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowForegroundPointerOver" Color="{ThemeResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowSelectedBackground" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowSelectedForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowBorderFocused" Color="{StaticResource SystemBaseMediumLowColor}"/>
+            <x:Double x:Key="SyncfusionDataGridRowBorderThickessPointerOver">0</x:Double>
+            <!--CurrentCell-->
+            <SolidColorBrush x:Key="SyncfusionDataGridCurrentCellBorderBrush" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--Unbound Row-->
+            <SolidColorBrush x:Key="SyncfusionUnboundRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionUnboundRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Table Summary Row-->
+            <SolidColorBrush x:Key="SyncfusionTableSummaryRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTableSummaryRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Caption Summary Row-->
+            <SolidColorBrush x:Key="SyncfusionCaptionSummaryRowControlBackground" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionCaptionSummaryRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Group Summary Row-->
+            <SolidColorBrush x:Key="SyncfusionGroupSummaryRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGroupSummaryRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Expander-->
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupExpanderIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Row HeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionGridRowHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellCurrentRowErrorIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellErrorIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellFilterRowIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellAddNewRowIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellEditingIndicatorFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellCurrentRowIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Row Header Indent Cell-->
+            <SolidColorBrush x:Key="SyncfusionGridRowHeaderIndentCellBackground" Color="Transparent"/>
+
+            <!--AddNewRow-->
+            <SolidColorBrush x:Key="SyncfusionAddNewRowControlBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionAddNewRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Row DragLine-->
+            <SolidColorBrush x:Key="SyncfusionDragLineBorder" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--Busy Indicator-->
+            <SolidColorBrush x:Key="SyncfusionBuysIndicatorFill" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--Details View-->
+            <SolidColorBrush x:Key="SyncfusionDetailsViewGridBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDetailsViewExpanderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridDetailsViewExpanderIconFill" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDetailsViewRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridDetailsViewDragLineFill" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--GroupDropArea-->
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaForeground" Color="{StaticResource SystemBaseMediumColor}"/>
+
+            <!--GroupExpander-->
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconBackgroundPointerOver" Color="{ThemeResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconBackgroundPressed" Color="{ThemeResource SystemListMediumColor}"/>
+
+            <!--GroupDropAreaItem-->
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBackground" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBackgroundPointerOver" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemForeground" Color="{StaticResource SystemBaseHighColor }"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemForegroundPointerOver" Color="{StaticResource SystemBaseHighColor }"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBorderBrush" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBorderBrushPointerOver" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemSortIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemSortIconFillPointerOver" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemCloseIconFill" Color="{StaticResource SystemBaseMediumHighColor}"/>
+
+            <!--Drag Arrow-->
+            <SolidColorBrush x:Key="SyncfusionDataGridDragIndicatorArrowFill" Color="{ThemeResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridDragIndicatorArrowStroke" Color="{ThemeResource SystemAccentColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionPopupContentControlBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPopupContentControlForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionPopupContentControlBorderBrush" Color="{StaticResource SystemChromeMediumColor}"/>
+
+            <!--GridFilterControl-->
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortIcon" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundSelectedActive" Color="{ThemeResource SystemBaseHighColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIcon" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIconPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIconPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIconDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForegroundDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonExpander" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonExpanderPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonExpanderPressed" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlTopSeparatorBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlBottomSeparatorBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSizeGripBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlFilteredFromIconBrush" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBrush" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBackgroundPressed" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <CornerRadius x:Key="SyncfusionDataGridFilterControlCornerRadius">2</CornerRadius>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchTextWatermarkBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+
+            <!--AdvanceFilterControl-->
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconFill" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackgroundSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrushPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrushPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrushSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <CornerRadius x:Key="SyncfusionDataGridFilterControlCasingIconCornerRadius">2</CornerRadius>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerIconBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerIconBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerIconBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerPopUpBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlTextBoxBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+
+            <!--FilterRow-->
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterRowBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionFilterRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterRowBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonIconBrush" Color="{ThemeResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonBackgroundPointerOver" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonBackgroundPointerPressed" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterRowPopUpBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <!--PrintPageControl-->
+            <SolidColorBrush x:Key="SyncfusionDataGridPrintPageControlBorderBrush" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridPrintPageControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <Thickness x:Key="SyncfusionDataGridPrintPageControlBorderThickness">0</Thickness>
+            <!--PrintGridCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintGridCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionPrintGridCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintGridCellForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <Thickness x:Key="SyncfusionPrintGridCellBorderThickness">0,0,1,1</Thickness>
+            <Thickness x:Key="SyncfusionPrintGridCellPadding">0,0,1,1</Thickness>
+            <!--PrintHeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintHeaderCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintHeaderCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintHeaderCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintHeaderCellPadding">0,0,0,0</Thickness>
+            <!--PrintCaptionSummaryCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintCaptionSummaryCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintCaptionSummaryCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintCaptionSummaryCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintCaptionSummaryCellPadding">0</Thickness>
+            <!--PrintGroupSummaryCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintGroupSummaryCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintGroupSummaryCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintGroupSummaryCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintGroupSummaryCellPadding">0</Thickness>
+            <!--PrintGroupSummaryCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintTableSummaryCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintTableSummaryCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintTableSummaryCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintTableSummaryCellPadding">0</Thickness>
+            <!--PrintUnboundRowCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintUnboundRowCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintUnboundRowCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintUnboundRowCellForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <Thickness x:Key="SyncfusionPrintUnboundRowCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintUnboundRowCellPadding">0</Thickness>
+
+            <!--TreeGrid-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridLineStroke" Color="{StaticResource SystemBaseLowColor}"/>
+            <FontWeight x:Key="SyncfusionTreeGridThemeFontWeight">Normal</FontWeight>
+
+            <!--HeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellForeground" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellForegroundPointerOver" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridSortIconForeground" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterIconForeground" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridSortIconForegroundPointerOver" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBorderBrushPointerOver" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <!--StackedHeaderCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridStackedHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridStackedHeaderCellForeground" Color="{StaticResource SystemBaseMediumColor}"/>
+
+            <!--GridCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridGridCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridGridCellForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Row-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowSelectedBackground" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowSelectedForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowBackgroundFocused" Color="{StaticResource SystemBaseMediumLowColor}"/>
+
+            <!--CurrentCell-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridCurrentCellBorderBrush" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--ExpanderCell-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridExpanderIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--RowHeaderCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellErrorIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellCurrentRowErrorIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellEditingIndicatorFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellCurrentRowIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--RowHeaderIndentCell-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderIndentCellBackground" Color="Transparent"/>
+
+            <!--DragLine-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridDragLineFill" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--TreeGridFilterControl-->
+            <!--SortButton-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortIcon" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundPointerOver" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundPressed" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundSelectedActive" Color="{ThemeResource SystemBaseHighColor}"/>
+
+            <!--ClearFilterButton-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForegroundDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+
+            <!--AdvanceFilterButton-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonExpanderFill" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonExpanderPointerOver" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonExpanderPressed" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonBackgroundPressed" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Separator-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlTopSeparatorBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlBottomSeparatorBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <!--SizeGrip-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSizeGripBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <!--SearchTextBox-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlFilteredFromIconBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBackgroundPointerOver" Color="{StaticResource SystemAltMediumLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBackgroundPressed" Color="{StaticResource SystemAltMediumLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchTextWatermarkBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <CornerRadius x:Key="SyncfusionTreeGridFilterControlCornerRadius">2</CornerRadius>
+
+            <!--TreeGridAdvanceFilterControl-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconFill" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrushPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrushPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackgroundSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrushSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <CornerRadius x:Key="SyncfusionTreeGridFilterControlCasingIconCornerRadius">2</CornerRadius>
+
+            <!--ValidationToolTip-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerIconBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerIconBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerIconBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerPopUpBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlTextBoxBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Dark">
+            <!--SfDataGrid-->
+            <SolidColorBrush x:Key="SyncfusionDataGridLineStroke" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridBackground" Color="Transparent"/>
+            <FontWeight x:Key="SyncfusionDataGridThemeFontWeight">Normal</FontWeight>
+
+            <!--SfDataGrid HeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForeground" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForegroundPointerOver" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForegroundPressed" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridSortIconForeground" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridSortIconForegroundPointerOver" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridSortIconForegroundPressed" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterIconForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionFilterToggelButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionFilterToggleButtonBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridHeaderCellFilterIconPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridHeaderCellFilterIconPressed" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--SfDataGrid StackedHeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionGridStackedHeaderCellControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGridStackedHeaderCellControlForeground" Color="{StaticResource SystemBaseMediumColor}"/>
+
+            <!--SfDataGrid GridCell-->
+            <SolidColorBrush x:Key="SyncfusionGridDetailsViewIndentCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Row Control-->
+            <SolidColorBrush x:Key="SyncfusionDataGridRowBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowForegroundPointerOver" Color="{ThemeResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowSelectedBackground" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowSelectedForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowBorderFocused" Color="{StaticResource SystemBaseMediumLowColor}"/>
+            <x:Double x:Key="SyncfusionDataGridRowBorderThickessPointerOver">0</x:Double>
+            <!--CurrentCell-->
+            <SolidColorBrush x:Key="SyncfusionDataGridCurrentCellBorderBrush" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--Unbound Row-->
+            <SolidColorBrush x:Key="SyncfusionUnboundRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionUnboundRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Table Summary Row-->
+            <SolidColorBrush x:Key="SyncfusionTableSummaryRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTableSummaryRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Caption Summary Row-->
+            <SolidColorBrush x:Key="SyncfusionCaptionSummaryRowControlBackground" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionCaptionSummaryRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Group Summary Row-->
+            <SolidColorBrush x:Key="SyncfusionGroupSummaryRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGroupSummaryRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Expander-->
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupExpanderIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Row HeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionGridRowHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellCurrentRowErrorIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellErrorIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellFilterRowIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellAddNewRowIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellEditingIndicatorFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellCurrentRowIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Row Header Indent Cell-->
+            <SolidColorBrush x:Key="SyncfusionGridRowHeaderIndentCellBackground" Color="Transparent"/>
+
+            <!--AddNewRow-->
+            <SolidColorBrush x:Key="SyncfusionAddNewRowControlBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionAddNewRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Row DragLine-->
+            <SolidColorBrush x:Key="SyncfusionDragLineBorder" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--Busy Indicator-->
+            <SolidColorBrush x:Key="SyncfusionBuysIndicatorFill" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--Details View-->
+            <SolidColorBrush x:Key="SyncfusionDetailsViewGridBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDetailsViewExpanderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridDetailsViewExpanderIconFill" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDetailsViewRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridDetailsViewDragLineFill" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--GroupDropArea-->
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaForeground" Color="{StaticResource SystemBaseMediumColor}"/>
+
+            <!--GroupExpander-->
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconBackgroundPointerOver" Color="{ThemeResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconBackgroundPressed" Color="{ThemeResource SystemListMediumColor}"/>
+
+            <!--GroupDropAreaItem-->
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBackground" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBackgroundPointerOver" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemForeground" Color="{StaticResource SystemBaseHighColor }"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemForegroundPointerOver" Color="{StaticResource SystemBaseHighColor }"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBorderBrush" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBorderBrushPointerOver" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemSortIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemSortIconFillPointerOver" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemCloseIconFill" Color="{StaticResource SystemBaseMediumHighColor}"/>
+
+            <!--Drag Arrow-->
+            <SolidColorBrush x:Key="SyncfusionDataGridDragIndicatorArrowFill" Color="{ThemeResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridDragIndicatorArrowStroke" Color="{ThemeResource SystemAccentColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionPopupContentControlBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPopupContentControlForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionPopupContentControlBorderBrush" Color="{StaticResource SystemChromeMediumColor}"/>
+
+            <!--GridFilterControl-->
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortIcon" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundSelectedActive" Color="{ThemeResource SystemBaseHighColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIcon" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIconPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIconPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIconDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForegroundDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonExpander" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonExpanderPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonExpanderPressed" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlTopSeparatorBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlBottomSeparatorBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSizeGripBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlFilteredFromIconBrush" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBrush" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBackgroundPressed" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <CornerRadius x:Key="SyncfusionDataGridFilterControlCornerRadius">2</CornerRadius>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchTextWatermarkBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+
+            <!--AdvanceFilterControl-->
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconFill" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackgroundSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrushPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrushPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrushSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <CornerRadius x:Key="SyncfusionDataGridFilterControlCasingIconCornerRadius">2</CornerRadius>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerIconBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerIconBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerIconBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerPopUpBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlTextBoxBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+
+            <!--FilterRow-->
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterRowBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionFilterRowControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterRowBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonIconBrush" Color="{ThemeResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonBackgroundPointerOver" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonBackgroundPointerPressed" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterRowPopUpBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <!--PrintPageControl-->
+            <SolidColorBrush x:Key="SyncfusionDataGridPrintPageControlBorderBrush" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridPrintPageControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <Thickness x:Key="SyncfusionDataGridPrintPageControlBorderThickness">0</Thickness>
+            <!--PrintGridCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintGridCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionPrintGridCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintGridCellForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <Thickness x:Key="SyncfusionPrintGridCellBorderThickness">0,0,1,1</Thickness>
+            <Thickness x:Key="SyncfusionPrintGridCellPadding">0,0,1,1</Thickness>
+            <!--PrintHeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintHeaderCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintHeaderCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintHeaderCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintHeaderCellPadding">0,0,0,0</Thickness>
+            <!--PrintCaptionSummaryCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintCaptionSummaryCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintCaptionSummaryCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintCaptionSummaryCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintCaptionSummaryCellPadding">0</Thickness>
+            <!--PrintGroupSummaryCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintGroupSummaryCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintGroupSummaryCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintGroupSummaryCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintGroupSummaryCellPadding">0</Thickness>
+            <!--PrintGroupSummaryCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintTableSummaryCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintTableSummaryCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintTableSummaryCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintTableSummaryCellPadding">0</Thickness>
+            <!--PrintUnboundRowCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintUnboundRowCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintUnboundRowCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintUnboundRowCellForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <Thickness x:Key="SyncfusionPrintUnboundRowCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintUnboundRowCellPadding">0</Thickness>
+
+            <!--TreeGrid-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridLineStroke" Color="{StaticResource SystemBaseLowColor}"/>
+            <FontWeight x:Key="SyncfusionTreeGridThemeFontWeight">Normal</FontWeight>
+
+            <!--HeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellForeground" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellForegroundPointerOver" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridSortIconForeground" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterIconForeground" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridSortIconForegroundPointerOver" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBorderBrushPointerOver" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <!--StackedHeaderCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridStackedHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridStackedHeaderCellForeground" Color="{StaticResource SystemBaseMediumColor}"/>
+
+            <!--GridCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridGridCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridGridCellForeground" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Row-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowSelectedBackground" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowSelectedForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowBackgroundFocused" Color="{StaticResource SystemBaseMediumLowColor}"/>
+
+            <!--CurrentCell-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridCurrentCellBorderBrush" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--ExpanderCell-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridExpanderIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--RowHeaderCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellErrorIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellCurrentRowErrorIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellEditingIndicatorFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellCurrentRowIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--RowHeaderIndentCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderIndentCellBackground" Color="Transparent"/>
+
+            <!--DragLine-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridDragLineFill" Color="{ThemeResource SystemAccentColor}"/>
+
+            <!--TreeGridFilterControl-->
+            <!--SortButton-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortIcon" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundPointerOver" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundPressed" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundSelectedActive" Color="{ThemeResource SystemBaseHighColor}"/>
+
+            <!--ClearFilterButton-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconFill" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForegroundDisabled" Color="{StaticResource SystemBaseMediumLowColor}"/>
+
+            <!--AdvanceFilterButton-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonExpanderFill" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonExpanderPointerOver" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonExpanderPressed" Color="{StaticResource SystemBaseMediumHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonForegroundPointerOver" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonBackgroundPressed" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonForegroundPressed" Color="{StaticResource SystemBaseHighColor}"/>
+
+            <!--Separator-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlTopSeparatorBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlBottomSeparatorBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <!--SizeGrip-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSizeGripBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <!--SearchTextBox-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlFilteredFromIconBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBackgroundPointerOver" Color="{StaticResource SystemAltMediumLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBackgroundPressed" Color="{StaticResource SystemAltMediumLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchTextWatermarkBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <CornerRadius x:Key="SyncfusionTreeGridFilterControlCornerRadius">2</CornerRadius>
+
+            <!--TreeGridAdvanceFilterControl-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconFill" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackgroundPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrushPointerOver" Color="{StaticResource SystemListLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrushPressed" Color="{StaticResource SystemListMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackgroundSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrushSelectedActive" Color="{StaticResource SystemListAccentLowColor}"/>
+            <CornerRadius x:Key="SyncfusionTreeGridFilterControlCasingIconCornerRadius">2</CornerRadius>
+
+            <!--ValidationToolTip-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerIconBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerIconBackground" Color="{StaticResource SystemChromeMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerIconBackgroundPressed" Color="{StaticResource SystemListMediumColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerPopUpBorderBrush" Color="{StaticResource SystemBaseLowColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlTextBoxBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="HighContrast">
+            <!--SfDataGrid-->
+            <SolidColorBrush x:Key="SyncfusionDataGridLineStroke" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridBackground" Color="Transparent"/>
+            <FontWeight x:Key="SyncfusionDataGridThemeFontWeight">Normal</FontWeight>
+
+            <!--SfDataGrid HeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForegroundPointerOver" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGridHeaderCellControlForegroundPressed" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridSortIconForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridSortIconForegroundPointerOver" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridSortIconForegroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterIconForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionFilterToggelButtonBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionFilterToggleButtonBackgroundPressed" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridHeaderCellFilterIconPointerOver" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridHeaderCellFilterIconPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <!--SfDataGrid StackedHeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionGridStackedHeaderCellControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGridStackedHeaderCellControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--SfDataGrid GridCell-->
+            <SolidColorBrush x:Key="SyncfusionGridDetailsViewIndentCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--Row Control-->
+            <SolidColorBrush x:Key="SyncfusionDataGridRowBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowForegroundPointerOver" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowSelectedBackground" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowSelectedForeground" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowBorderFocused" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <x:Double x:Key="SyncfusionDataGridRowBorderThickessPointerOver">0</x:Double>
+
+            <!--CurrentCell-->
+            <SolidColorBrush x:Key="SyncfusionDataGridCurrentCellBorderBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--Unbound Row-->
+            <SolidColorBrush x:Key="SyncfusionUnboundRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionUnboundRowControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--Table Summary Row-->
+            <SolidColorBrush x:Key="SyncfusionTableSummaryRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTableSummaryRowControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--Caption Summary Row-->
+            <SolidColorBrush x:Key="SyncfusionCaptionSummaryRowControlBackground" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionCaptionSummaryRowControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--Group Summary Row-->
+            <SolidColorBrush x:Key="SyncfusionGroupSummaryRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGroupSummaryRowControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--Expander-->
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupExpanderIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--Row HeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionGridRowHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellCurrentRowErrorIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellErrorIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellFilterRowIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellAddNewRowIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellEditingIndicatorFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridRowHeaderCellCurrentRowIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--Row Header Indent Cell-->
+            <SolidColorBrush x:Key="SyncfusionGridRowHeaderIndentCellBackground" Color="Transparent"/>
+
+            <!--AddNewRow-->
+            <SolidColorBrush x:Key="SyncfusionAddNewRowControlBackground" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionAddNewRowControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--Row DragLine-->
+            <SolidColorBrush x:Key="SyncfusionDragLineBorder" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <!--Busy Indicator-->
+            <SolidColorBrush x:Key="SyncfusionBuysIndicatorFill" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <!--DetailsView-->
+            <SolidColorBrush x:Key="SyncfusionDetailsViewGridBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDetailsViewExpanderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridDetailsViewExpanderIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDetailsViewRowControlBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridDetailsViewDragLineFill" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <!--GroupDropArea-->
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--GroupExpander-->
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaExpanderIconBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <!--GroupDropAreaItem-->
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBackground" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemForeground" Color="{ThemeResource SystemColorWindowTextColor }"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemForegroundPointerOver" Color="{ThemeResource SystemColorHighlightTextColor }"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBorderBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionGroupDropAreaItemBorderBrushPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemSortIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemSortIconFillPointerOver" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridGroupDropAreaItemCloseIconFill" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+
+            <!--Drag Arrow-->
+            <SolidColorBrush x:Key="SyncfusionDataGridDragIndicatorArrowFill" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridDragIndicatorArrowStroke" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionPopupContentControlBackground" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPopupContentControlForeground" Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionPopupContentControlBorderBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--GridFilterControl-->
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortIcon" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundPointerOver" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundPressed" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundDisabled" Color="{ThemeResource SystemColorGrayTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonBackgroundSelectedActive" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSortButtonForegroundSelectedActive" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIcon" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIconPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIconPressed" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterIconDisabled" Color="{ThemeResource SystemColorGrayTextColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackgroundPointerOver" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForegroundPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForegroundPressed" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonForegroundDisabled" Color="{ThemeResource SystemColorGrayTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlClearFilterButtonBorderBrush" Color="Transparent"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonExpander" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonExpanderPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonExpanderPressed" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBorderBrush" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBackgroundPointerOver" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonForegroundPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridAdvancedFilterButtonForegroundPressed" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlTopSeparatorBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlBottomSeparatorBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSizeGripBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlFilteredFromIconBrush" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBackgroundPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchIconBackgroundPressed" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlBackground" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlBorderBrush" Color="{ThemeResource SystemColorButtonTextColor }"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <CornerRadius x:Key="SyncfusionDataGridFilterControlCornerRadius">2</CornerRadius>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlSearchTextWatermarkBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--AdvanceFilterControl-->
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBackgroundSelectedActive" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrushPointerOver" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrushPressed" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlCasingIconBorderBrushSelectedActive" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <CornerRadius x:Key="SyncfusionDataGridFilterControlCasingIconCornerRadius">2</CornerRadius>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerIconBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerIconBackground" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerIconBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerBorderBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlDatePickerPopUpBorderBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterControlTextBoxBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+
+
+            <!--FilterRow-->
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterRowBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionFilterRowControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterRowBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonIconBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonBackgroundPointerOver" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterOptionButtonBackgroundPointerPressed" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridFilterRowPopUpBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+
+            <!--PrintPageControl-->
+            <SolidColorBrush x:Key="SyncfusionDataGridPrintPageControlBorderBrush" Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionDataGridPrintPageControlForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <Thickness x:Key="SyncfusionDataGridPrintPageControlBorderThickness">0</Thickness>
+            <!--PrintGridCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintGridCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionPrintGridCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintGridCellForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <Thickness x:Key="SyncfusionPrintGridCellBorderThickness">0,0,1,1</Thickness>
+            <Thickness x:Key="SyncfusionPrintGridCellPadding">0,0,1,1</Thickness>
+            <!--PrintHeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintHeaderCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintHeaderCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintHeaderCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintHeaderCellPadding">0,0,0,0</Thickness>
+            <!--PrintCaptionSummaryCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintCaptionSummaryCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintCaptionSummaryCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintCaptionSummaryCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintCaptionSummaryCellPadding">0</Thickness>
+            <!--PrintGroupSummaryCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintGroupSummaryCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintGroupSummaryCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintGroupSummaryCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintGroupSummaryCellPadding">0</Thickness>
+            <!--PrintGroupSummaryCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintTableSummaryCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintTableSummaryCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionPrintTableSummaryCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintTableSummaryCellPadding">0</Thickness>
+            <!--PrintUnboundRowCell-->
+            <SolidColorBrush x:Key="SyncfusionPrintUnboundRowCellBackground" Color="{StaticResource SystemBaseLowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintUnboundRowCellBorderBrush" Color="{StaticResource SystemBaseMediumColor}"/>
+            <SolidColorBrush x:Key="SyncfusionPrintUnboundRowCellForeground" Color="{StaticResource SystemBaseHighColor}"/>
+            <Thickness x:Key="SyncfusionPrintUnboundRowCellBorderThickness">1</Thickness>
+            <Thickness x:Key="SyncfusionPrintUnboundRowCellPadding">0</Thickness>
+            
+            <!--TreeGrid-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridLineStroke" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <FontWeight x:Key="SyncfusionTreeGridThemeFontWeight">Normal</FontWeight>
+
+            <!--HeaderCell-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellForegroundPointerOver" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridSortIconForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterIconForeground" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridSortIconForegroundPointerOver" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridHeaderCellBorderBrushPointerOver" Color="{ThemeResource SystemColorButtonTextColor}"/>
+
+            <!--StackedHeaderCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridStackedHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridStackedHeaderCellForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--GridCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridGridCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridGridCellForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--Row-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowSelectedBackground" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowSelectedForeground" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowBackgroundFocused" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <!--CurrentCell-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridCurrentCellBorderBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--ExpanderCell-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridExpanderIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--RowHeaderCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellErrorIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellCurrentRowErrorIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellEditingIndicatorFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderCellCurrentRowIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <!--RowHeaderIndentCell-->
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridRowHeaderIndentCellBackground" Color="Transparent"/>
+
+            <!--DragLine-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridDragLineFill" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <!--TreeGridFilterControl-->
+            <!--SortButton-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortIcon" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundPointerOver" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundPressed" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundDisabled" Color="{ThemeResource SystemColorGrayTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonBackgroundSelectedActive" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSortButtonForegroundSelectedActive" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+
+            <!--ClearFilterButton-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonIconDisabled" Color="{ThemeResource SystemColorGrayTextColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackgroundPointerOver" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForegroundPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForegroundPressed" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonBackgroundDisabled" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlClearFilterButtonForegroundDisabled" Color="{ThemeResource SystemColorGrayTextColor}"/>
+
+            <!--AdvanceFilterButton-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonExpanderFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonExpanderPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonExpanderPressed" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonBackgroundPointerOver" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonForegroundPointerOver" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridAdvancedFilterButtonForegroundPressed" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+
+            <!--Separator-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlTopSeparatorBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlBottomSeparatorBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+
+            <!--SizeGrip-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSizeGripBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+
+            <!--SearchTextBox-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlFilteredFromIconBrush" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBackgroundPointerOver" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchIconBackgroundPressed" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlBackground" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlSearchTextWatermarkBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <CornerRadius x:Key="SyncfusionTreeGridFilterControlCornerRadius">2</CornerRadius>
+
+            <!--AdvanceFilterControl-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconFill" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrushPointerOver" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrushPressed" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBackgroundSelectedActive" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlCasingIconBorderBrushSelectedActive" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <CornerRadius x:Key="SyncfusionTreeGridFilterControlCasingIconCornerRadius">2</CornerRadius>
+
+            <!--ValidationToolTip-->
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerIconBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerIconBackground" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerIconBackgroundPressed" Color="{ThemeResource SystemColorHighlightColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerBorderBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlDatePickerPopUpBorderBrush" Color="{ThemeResource SystemColorWindowTextColor}"/>
+
+            <SolidColorBrush x:Key="SyncfusionTreeGridFilterControlTextBoxBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
