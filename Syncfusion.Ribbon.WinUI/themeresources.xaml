@@ -1,0 +1,911 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///Syncfusion.Core.WinUI/Themes/Common.xaml" />
+        <ResourceDictionary Source="ms-appx:///Syncfusion.Core.WinUI/Themes/TextButton.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  Theme dictionaries  -->
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <!--  Ribbon  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonFileMenuButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonFileMenuButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonTabFileMenuButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabFileMenuButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabFileMenuButtonBackgroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupSeparatorFill"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowMenuGroupBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowMenuGroupForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowMenuGroupBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupOverflowFlyoutBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonMinimizeButtonForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundSelected"
+                             Color="{StaticResource SystemBaseHighColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBorderBrushSelected"
+                             Color="{ThemeResource SystemAccentColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackgroundDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBorderBrush"
+                             Color="{StaticResource SystemChromeHighColor}" />
+
+            <!--  Ribbon Backstage  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonBackstageBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonBackstageBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <!--  BackstageView  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabListViewBackground"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewBackButtonForeground"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+
+            <!--  BackstageViewTabItem  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBorderBrush"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForeground"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForegroundPointerOver"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForegroundPressed"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBackgroundPressed"
+                             Color="{ThemeResource SystemAccentColorDark2}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColorDark2}" />
+
+            <!--  BackstageViewItemSeparator  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewItemSeparatorBorderBrush"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewItemSeparatorBackground"
+                             Color="{ThemeResource SystemAccentColorLight1}" />
+
+            <!--  BackstageViewButtonItem  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackground"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBorderBrush"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForeground"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForegroundPointerOver"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForegroundPressed"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackgroundPressed"
+                             Color="{ThemeResource SystemAccentColorDark2}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColorDark2}" />
+
+            <!--  Ribbon Button  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackgroundDisabled"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+
+            <!--  Ribbon DropDownButton  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundFocused"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundDisabled"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+
+            <!--  Ribbon SplitButton  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonSecondaryBackgroundFocused"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonPrimaryBackgroundFocused"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackgroundDisabled"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowButtonBackgroundFocused"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowButtonForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            
+            <!--  Ribbon CustomItem  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonCustomItemBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonCustomItemForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonCustomItemBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+
+            <!--  Ribbon MenuFlyoutItem  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemSecondaryBackgroundFocused"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemPrimaryBackgroundFocused"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemSeparatorFill"
+                             Color="{StaticResource SystemListLowColor}" />
+
+            <!--  Ribbon Gallery  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryBackground"
+                             Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryPopupBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+
+            <!--  Ribbon Gallery Item  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemBorderBrushPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemBorderBrushPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemBorderBrushSelected"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryPopupGroupSeparatorBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryPopupResizeThumbForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollViewBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryExpandButtonForeground"
+                             Color="{ThemeResource SystemBaseHighColor}" />
+
+            <!--  Resources for RibbonGallery Scroll Repeat Buttons  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackgroundDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="Dark">
+            <!--  Ribbon  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTitlebarBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonFileMenuButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonFileMenuButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonTabFileMenuButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabFileMenuButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabFileMenuButtonBackgroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupSeparatorFill"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowMenuGroupBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowMenuGroupForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowMenuGroupBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupOverflowFlyoutBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonMinimizeButtonForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundSelected"
+                             Color="{StaticResource SystemBaseHighColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBorderBrushSelected"
+                             Color="{ThemeResource SystemAccentColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackgroundDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBorderBrush"
+                             Color="{StaticResource SystemChromeHighColor}" />
+
+            <!--  Ribbon Backstage  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonBackstageBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonBackstageBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <!--  BackStageView  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabListViewBackground"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewBackButtonForeground"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+
+            <!--  BackstageViewTabItem  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBorderBrush"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForeground"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForegroundPointerOver"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForegroundPressed"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColorDark2}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBackgroundPressed"
+                             Color="{ThemeResource SystemAccentColorDark2}" />
+
+            <!--  BackstageViewItemSeparator  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewItemSeparatorBorderBrush"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewItemSeparatorBackground"
+                             Color="{ThemeResource SystemAccentColorLight1}" />
+
+            <!--  BackstageViewButtonItem  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackground"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBorderBrush"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForeground"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForegroundPointerOver"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForegroundPressed"
+                             Color="{ThemeResource SystemOnAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColorDark2}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackgroundPressed"
+                             Color="{ThemeResource SystemAccentColorDark2}" />
+
+
+
+            <!--  Ribbon Button  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackgroundDisabled"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+
+            <!--  Ribbon DropDownButton  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundFocused"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundDisabled"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+
+            <!--  Ribbon SplitButton  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonSecondaryBackgroundFocused"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonPrimaryBackgroundFocused"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackgroundDisabled"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowButtonBackgroundFocused"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowButtonForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            
+            <!--  Ribbon CustomItem  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonCustomItemBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonCustomItemForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonCustomItemBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+
+            <!--  Ribbon MenuFlyoutItem  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemSecondaryBackgroundFocused"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemPrimaryBackgroundFocused"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemSeparatorFill"
+                             Color="{StaticResource SystemListLowColor}" />
+
+            <!--  Ribbon Gallery  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryBackground"
+                             Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryPopupBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+
+            <!--  Ribbon Gallery Item  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemBorderBrushPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemBorderBrushPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemBorderBrushSelected"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryPopupGroupSeparatorBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryPopupResizeThumbForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollViewBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryExpandButtonForeground"
+                             Color="{ThemeResource SystemBaseHighColor}" />
+
+            <!--  Resources for RibbonGallery Scroll Repeat Buttons  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackground"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackgroundPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackgroundDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+        </ResourceDictionary>
+        <ResourceDictionary x:Key="HighContrast">
+            <!--  Ribbon  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonBorderBrush"
+                             Color="{StaticResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonFileMenuButtonBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonFileMenuButtonForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonTabFileMenuButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabFileMenuButtonBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabFileMenuButtonBackgroundDisabled"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupSeparatorFill"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowMenuGroupBackground"
+                             Color="{StaticResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowMenuGroupForeground"
+                             Color="{StaticResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowMenuGroupBorderBrush"
+                             Color="{StaticResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGroupOverflowFlyoutBorderBrush"
+                             Color="{StaticResource SystemColorButtonTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonMinimizeButtonForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBackgroundDisabled"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonTabForegroundSelected"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonTabBorderBrushSelected"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonScrollRepeatButtonBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <!--  Ribbon Backstage  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonBackstageBackground"
+                             Color="{StaticResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonBackstageBorderBrush"
+                             Color="{StaticResource SystemColorButtonTextColor}" />
+
+            <!--  BackStageView  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabListViewBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewBackButtonForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <!--  BackstageViewTabItem  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBorderBrush"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBackgroundSelected"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewTabItemBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+
+            <!--  BackstageViewItemSeparator  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewItemSeparatorBorderBrush"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewItemSeparatorBackground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <!--  BackstageViewButtonItem  -->
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBorderBrush"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackgroundSelected"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionBackstageViewButtonItemBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+
+            <!--  Ribbon Button  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonButtonForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+
+            <!--  Ribbon DropDownButton  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundFocused"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundFocused"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonDropDownButtonForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+
+            <!--  Ribbon SplitButton  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonSecondaryBackgroundFocused"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonPrimaryBackgroundFocused"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundFocused"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonSplitButtonForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowButtonBackgroundFocused"
+                             Color="{StaticResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonOverflowButtonForegroundFocused"
+                             Color="{StaticResource SystemColorHighlightTextColor}" />
+            
+            <!--  Ribbon CustomItem  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonCustomItemBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonCustomItemForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonCustomItemBorderBrush"
+                             Color="Transparent" />
+
+            <!--  Ribbon MenuFlyoutItem  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemSecondaryBackgroundFocused"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemPrimaryBackgroundFocused"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemForegroundFocused"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonMenuFlyoutItemSeparatorFill"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+
+            <!--  Ribbon Gallery  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryPopupBackground"
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+
+            <!--  Ribbon Gallery Item  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemBorderBrushPressed"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryItemBorderBrushSelected"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryPopupGroupSeparatorBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryPopupResizeThumbForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollViewBackground"
+                             Color="{StaticResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryExpandButtonForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+
+            <!--  Brushes for RibbonGallery Repeat Buttons  -->
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackground"
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionRibbonGalleryScrollRepeatButtonForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+    <!--  Ribbon, RibbonTab, RibbonGroup  -->
+    <Thickness x:Key="SyncfusionRibbonBorderThickness">0,0,0,1</Thickness>
+    <CornerRadius x:Key="SyncfusionRibbonTabCornerRadius">0</CornerRadius>
+    <Thickness x:Key="SyncfusionRibbonGroupBorderThickness">0</Thickness> 
+    
+    <!--  Resources for RibbonBackstage  -->
+    <Thickness x:Key="SyncfusionRibbonBackstageMargin">0</Thickness>
+    <Thickness x:Key="SyncfusionRibbonBackstageBorderThickness">1</Thickness>
+    
+    <!--  Resources for BackstageView  -->
+    <Thickness x:Key="SyncfusionBackstageViewMargin">0</Thickness> 
+
+    <!--  Resources for BackstageViewTabItem  -->    
+    <CornerRadius x:Key="SyncfusionBackstageViewTabItemCornerRadius">0</CornerRadius>   
+    
+    <!--  Resources for BackstageViewButtonItem  -->
+    <Thickness x:Key="SyncfusionBackstageViewButtonItemMargin">0</Thickness>
+
+    <!--  Resources for RibbonItemHost  -->
+    <Thickness x:Key="SyncfusionRibbonCustomItemBorderThickness">0</Thickness>
+
+    <!--  Resources for RibbonMenuFlyoutItem  -->
+    <Thickness x:Key="SyncfusionRibbonMenuFlyoutItemBorderThickness">0</Thickness> 
+
+    <!--  Resources for RibbonGallery  -->
+    <Thickness x:Key="SyncfusionRibbonGalleryBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionRibbonGalleryItemBorderThickness">4</Thickness>
+</ResourceDictionary>

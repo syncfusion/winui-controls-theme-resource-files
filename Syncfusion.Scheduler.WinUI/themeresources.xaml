@@ -1,0 +1,482 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:text="using:Windows.UI.Text">
+
+    <ResourceDictionary.ThemeDictionaries>
+
+        <ResourceDictionary x:Key="Light">
+            <!--Generic-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerBorderBrush" Color="{StaticResource SystemBaseLowColor}"  />
+            <Thickness x:Key="SyncfusionSchedulerBorderThickness">1</Thickness>
+
+            <!--ResourceHeaderControl-->
+            <SolidColorBrush x:Key="SyncfusionResourceHeaderControlBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionResourceHeaderControlForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <StaticResource x:Key="SyncfusionResourceHeaderControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--SchedulerHeaderControl-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerHeaderControlBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerHeaderControlForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <StaticResource x:Key="SyncfusionSchedulerHeaderControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionSchedulerHeaderControlBorderThickness">0</Thickness>
+
+            <!--ViewHeaderControl-->
+            <SolidColorBrush x:Key="SyncfusionViewHeaderControlBackground" Color="{StaticResource SystemAltHighColor}" />
+            <StaticResource x:Key="SyncfusionViewHeaderControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionViewHeaderControlBorderThickness">0</Thickness>
+            <Thickness x:Key="SyncfusionViewHeaderControlTopLeftHeaderBorderThickness">0,1,1,1</Thickness>
+
+            <!--ViewHeaderBase-->
+            <SolidColorBrush x:Key="SyncfusionViewHeaderBaseBackground" Color="{StaticResource SystemAltHighColor}" />
+            <StaticResource x:Key="SyncfusionViewHeaderBaseBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--DayViewHeader-->
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderDayForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderDateForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderForegroundDisabled" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionDayViewHeaderBorderThickness">0,0,1,1</Thickness>
+            <Thickness x:Key="SyncfusionDayViewHeaderTopBorderThickness">0,1,0,0</Thickness>
+            <SolidColorBrush x:Key="SyncfusionTodayDayViewHeaderDateForeground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayDayViewHeaderDayForeground" Color="{ThemeResource SystemAccentColor}" />
+            <Thickness x:Key="SyncfusionTodayDayViewHeaderBorderThickness">0,4,0,0</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayDayViewHeaderDayFontWeight">SemiBold</text:FontWeight>
+            <text:FontWeight x:Key="SyncfusionTodayDayViewHeaderDateFontWeight">SemiBold</text:FontWeight>
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderBackgroundPointerOver" Color="{ThemeResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayDayViewHeaderBackgroundPointerOver" Color="{ThemeResource SystemAccentColorDark1}" />
+
+            <!--TimelineViewHeader-->
+            <SolidColorBrush x:Key="SyncfusionTimelineViewHeaderForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayTimelineViewHeaderForeground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimelineViewHeaderForegroundDisabled" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionTimelineViewHeaderBorderThickness">0,1,1,1</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayTimelineViewHeaderFontWeight">SemiBold</text:FontWeight>
+
+            <!--MonthViewHeader-->
+            <SolidColorBrush x:Key="SyncfusionMonthViewHeaderForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayMonthViewHeaderForeground" Color="{ThemeResource SystemAccentColor}" />
+            <Thickness x:Key="SyncfusionMonthViewHeaderBorderThickness">0,1,0,1</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayMonthViewHeaderFontWeight">SemiBold</text:FontWeight>
+
+            <!--MonthViewControl-->
+            <StaticResource x:Key="SyncfusionMonthViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            
+            <!--MonthCell-->
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackgroundPointerOver" Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackgroundSelected" Color="{ThemeResource SystemListAccentLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellForegroundDisabled" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackgroundDisabled" Color="{StaticResource SystemChromeLowColor}" />
+            <StaticResource x:Key="SyncfusionMonthCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionMonthCellBorderThickness">0,0,1,1</Thickness>
+            <SolidColorBrush x:Key="SyncfusionTodayMonthCellBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayMonthCellForeground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayMonthCellHighlightBorderBrush" Color="{ThemeResource SystemAccentColor}" />
+            <Thickness x:Key="SyncfusionTodayMonthCellHighlightBorderThickness">0,4,0,0</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayMonthCellFontWeight">SemiBold</text:FontWeight>
+            <SolidColorBrush x:Key="SyncfusionPreviousMonthCellBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionPreviousMonthCellForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionNextMonthCellBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionNextMonthCellForeground" Color="{StaticResource SystemBaseMediumColor}" />
+
+            <!--Month WeekNumberCell-->
+            <SolidColorBrush x:Key="SyncfusionWeekNumberCellBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionWeekNumberCellForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <StaticResource x:Key="SyncfusionWeekNumberCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionWeekNumberCellBorderThickness">0,0,1,0</Thickness>
+
+            <!--DayViewControl-->
+            <StaticResource x:Key="SyncfusionDayViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--TimelineViewControl-->
+            <StaticResource x:Key="SyncfusionTimelineViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--TimeSlotCell-->
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBackgroundPointerOver" Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBackgroundSelected" Color="{ThemeResource SystemListAccentLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBlackoutDayBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <StaticResource x:Key="SyncfusionTimeSlotCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionTimeSlotCellBorderThickness">0,0,1,1</Thickness>
+
+            <!--TimeRulerCell-->
+            <SolidColorBrush x:Key="SyncfusionTimeRulerCellBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeRulerCellForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <StaticResource x:Key="SyncfusionTimeRulerCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionTimeRulerCellBorderThickness">0,0,1,0</Thickness>
+
+            <!--SpecialTimeRegion-->
+            <SolidColorBrush x:Key="SyncfusionSpecialTimeRegionControlBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpecialTimeRegionControlForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpecialTimeRegionControlBackgroundPointerOver" Color="{StaticResource SystemListLowColor}" />
+
+            <!--TimeIndicatorControl-->
+            <SolidColorBrush x:Key="SyncfusionTimeIndicatorControlForeground" Color="{ThemeResource SystemAccentColor}" />
+
+            <!--AppointmentControl-->
+            <SolidColorBrush x:Key="SyncfusionAppointmentControlBackground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionAppointmentControlForeground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionAppointmentsCountControlForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <Thickness x:Key="SyncfusionAppointmentControlBorderThickness">1.5</Thickness>
+
+            <!--AllDayAppointmentViewControl-->
+            <SolidColorBrush x:Key="SyncfusionAllDayAppointmentViewControlBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionAllDayAppointmentViewControlExpanderGlyphForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <StaticResource x:Key="SyncfusionAllDayAppointmentViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <StaticResource x:Key="SyncfusionAllDayAppointmentViewControlExpanderBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionAllDayAppointmentViewControlBorderThickness">0,0,0,1</Thickness>
+
+            <!--MonthAgendaView-->
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <StaticResource x:Key="SyncfusionMonthAgendaViewBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewItemForeground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewItemBackground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewTodayBackground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewTodayForeground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewTodayDateForeground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewDayForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewDateForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <Thickness x:Key="SyncfusionMonthAgendaViewItemBorderThickness">1</Thickness>
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewNoEventForeground" Color="{StaticResource SystemBaseMediumLowColor}" />
+            <x:Double x:Key="SyncfusionMonthAgendaViewSelectedDateWidth">50</x:Double>
+
+            <!--Appointment editor-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewButtonBackground" Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewBorderBrush" Color="{StaticResource SystemChromeMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewHeaderForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewSaveButtonBackground" Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewSaveButtonForeground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewDropDownIconForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <text:FontWeight x:Key="SyncfusionSchedulerAppointmentEditorViewHeaderFontWeight">SemiBold</text:FontWeight>
+
+            <!--SchedulerRecurrenceEditorView-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewButtonBackground" Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewBorderBrush" Color="{StaticResource SystemChromeMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewHeaderForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewOkButtonBackground" Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewOkButtonForeground" Color="{StaticResource SystemAltHighColor}" />
+
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="Dark">
+            <!--Generic-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerBorderBrush" Color="{StaticResource SystemBaseLowColor}"  />
+            <Thickness x:Key="SyncfusionSchedulerBorderThickness">1</Thickness>
+
+            <!--ResourceHeaderControl-->
+            <SolidColorBrush x:Key="SyncfusionResourceHeaderControlBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionResourceHeaderControlForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <StaticResource x:Key="SyncfusionResourceHeaderControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--SchedulerHeaderControl-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerHeaderControlBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerHeaderControlForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <StaticResource x:Key="SyncfusionSchedulerHeaderControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionSchedulerHeaderControlBorderThickness">0</Thickness>
+
+            <!--ViewHeaderControl-->
+            <SolidColorBrush x:Key="SyncfusionViewHeaderControlBackground" Color="{StaticResource SystemAltHighColor}" />
+            <StaticResource x:Key="SyncfusionViewHeaderControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionViewHeaderControlBorderThickness">0</Thickness>
+            <Thickness x:Key="SyncfusionViewHeaderControlTopLeftHeaderBorderThickness">0,1,1,1</Thickness>
+
+            <!--ViewHeaderBase-->
+            <SolidColorBrush x:Key="SyncfusionViewHeaderBaseBackground" Color="{StaticResource SystemAltHighColor}" />
+            <StaticResource x:Key="SyncfusionViewHeaderBaseBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--DayViewHeader-->
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderDayForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderDateForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayDayViewHeaderDateForeground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayDayViewHeaderDayForeground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderForegroundDisabled" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionDayViewHeaderBorderThickness">0,0,1,1</Thickness>
+            <Thickness x:Key="SyncfusionDayViewHeaderTopBorderThickness">0,1,0,0</Thickness>
+            <Thickness x:Key="SyncfusionTodayDayViewHeaderBorderThickness">0,4,0,0</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayDayViewHeaderDayFontWeight">SemiBold</text:FontWeight>
+            <text:FontWeight x:Key="SyncfusionTodayDayViewHeaderDateFontWeight">SemiBold</text:FontWeight>
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderBackgroundPointerOver" Color="{ThemeResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayDayViewHeaderBackgroundPointerOver" Color="{ThemeResource SystemAccentColorDark1}" />
+
+            <!--TimelineViewHeader-->
+            <SolidColorBrush x:Key="SyncfusionTimelineViewHeaderForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayTimelineViewHeaderForeground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimelineViewHeaderForegroundDisabled" Color="{StaticResource SystemBaseMediumColor}"/>
+            <Thickness x:Key="SyncfusionTimelineViewHeaderBorderThickness">0,1,1,1</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayTimelineViewHeaderFontWeight">SemiBold</text:FontWeight>
+
+            <!--MonthViewHeader-->
+            <SolidColorBrush x:Key="SyncfusionMonthViewHeaderForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayMonthViewHeaderForeground" Color="{ThemeResource SystemAccentColor}" />
+            <Thickness x:Key="SyncfusionMonthViewHeaderBorderThickness">0,1,0,1</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayMonthViewHeaderFontWeight">SemiBold</text:FontWeight>
+
+            <!--MonthViewControl-->
+            <StaticResource x:Key="SyncfusionMonthViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--MonthCell-->
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayMonthCellBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayMonthCellForeground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayMonthCellHighlightBorderBrush" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionPreviousMonthCellBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionPreviousMonthCellForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionNextMonthCellBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionNextMonthCellForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackgroundPointerOver" Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackgroundSelected" Color="{ThemeResource SystemListAccentLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellForegroundDisabled" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackgroundDisabled" Color="{StaticResource SystemChromeLowColor}" />
+            <StaticResource x:Key="SyncfusionMonthCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionTodayMonthCellHighlightBorderThickness">0,4,0,0</Thickness>
+            <Thickness x:Key="SyncfusionMonthCellBorderThickness">0,0,1,1</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayMonthCellFontWeight">SemiBold</text:FontWeight>
+
+            <!--Month WeekNumberCell-->
+            <SolidColorBrush x:Key="SyncfusionWeekNumberCellBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionWeekNumberCellForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <StaticResource x:Key="SyncfusionWeekNumberCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionWeekNumberCellBorderThickness">0,0,1,0</Thickness>
+
+            <!--DayViewControl-->
+            <StaticResource x:Key="SyncfusionDayViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--TimelineViewControl-->
+            <StaticResource x:Key="SyncfusionTimelineViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--TimeSlotCell-->
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBackgroundPointerOver" Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBackgroundSelected" Color="{ThemeResource SystemListAccentLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBlackoutDayBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <StaticResource x:Key="SyncfusionTimeSlotCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionTimeSlotCellBorderThickness">0,0,1,1</Thickness>
+
+            <!--TimeRulerCell-->
+            <SolidColorBrush x:Key="SyncfusionTimeRulerCellBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeRulerCellForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <StaticResource x:Key="SyncfusionTimeRulerCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionTimeRulerCellBorderThickness">0,0,1,0</Thickness>
+
+            <!--SpecialTimeRegion-->
+            <SolidColorBrush x:Key="SyncfusionSpecialTimeRegionControlBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpecialTimeRegionControlForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpecialTimeRegionControlBackgroundPointerOver" Color="{StaticResource SystemListLowColor}" />
+
+            <!--TimeIndicatorControl-->
+            <SolidColorBrush x:Key="SyncfusionTimeIndicatorControlForeground" Color="{ThemeResource SystemAccentColor}" />
+
+            <!--AppointmentControl-->
+            <SolidColorBrush x:Key="SyncfusionAppointmentControlBackground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionAppointmentControlForeground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionAppointmentsCountControlForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <Thickness x:Key="SyncfusionAppointmentControlBorderThickness">1.5</Thickness>
+
+            <!--AllDayAppointmentViewControl-->
+            <SolidColorBrush x:Key="SyncfusionAllDayAppointmentViewControlBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionAllDayAppointmentViewControlExpanderGlyphForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <StaticResource x:Key="SyncfusionAllDayAppointmentViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <StaticResource x:Key="SyncfusionAllDayAppointmentViewControlExpanderBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionAllDayAppointmentViewControlBorderThickness">0,0,0,1</Thickness>
+
+            <!--MonthAgendaView-->
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewBackground" Color="{StaticResource SystemChromeLowColor}" />
+            <StaticResource x:Key="SyncfusionMonthAgendaViewBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewItemForeground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewItemBackground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewTodayBackground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewTodayForeground" Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewTodayDateForeground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewDayForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewDateForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <Thickness x:Key="SyncfusionMonthAgendaViewItemBorderThickness">1</Thickness>
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewNoEventForeground" Color="{StaticResource SystemBaseMediumLowColor}" />
+            <x:Double x:Key="SyncfusionMonthAgendaViewSelectedDateWidth">50</x:Double>
+
+            <!--Appointment editor-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewButtonBackground" Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewBorderBrush" Color="{StaticResource SystemChromeMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewHeaderForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewSaveButtonBackground" Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewSaveButtonForeground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewDropDownIconForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <text:FontWeight x:Key="SyncfusionSchedulerAppointmentEditorViewHeaderFontWeight">SemiBold</text:FontWeight>
+
+            <!--SchedulerRecurrenceEditorView-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewBackground" Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewButtonBackground" Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewBorderBrush" Color="{StaticResource SystemChromeMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewForeground" Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewHeaderForeground" Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewOkButtonBackground" Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewOkButtonForeground" Color="{StaticResource SystemAltHighColor}" />
+
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="HighContrast">
+            <!--Generic-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerBorderBrush" Color="{ThemeResource SystemColorButtonTextColor }" />
+            <Thickness x:Key="SyncfusionSchedulerBorderThickness">1</Thickness>
+
+            <!--ResourceHeaderControl-->
+            <SolidColorBrush x:Key="SyncfusionResourceHeaderControlBackground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionResourceHeaderControlForeground" Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <StaticResource x:Key="SyncfusionResourceHeaderControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--SchedulerHeaderControl-->
+            <SolidColorBrush x:Key="SyncfusionControlBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerHeaderControlForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <StaticResource x:Key="SyncfusionSchedulerHeaderControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionSchedulerHeaderControlBorderThickness">0</Thickness>
+
+            <!--ViewHeaderControl-->
+            <SolidColorBrush x:Key="SyncfusionViewHeaderControlBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <StaticResource x:Key="SyncfusionViewHeaderControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <StaticResource x:Key="SyncfusionViewHeaderBaseBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionViewHeaderControlBorderThickness">0</Thickness>
+            <Thickness x:Key="SyncfusionViewHeaderControlTopLeftHeaderBorderThickness">0,1,1,1</Thickness>
+
+            <!--ViewHeaderBase-->
+            <SolidColorBrush x:Key="SyncfusionViewHeaderBaseBackground" Color="{ThemeResource SystemColorWindowColor}" />
+
+            <!--DayViewHeader-->
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderDayForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderDateForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayDayViewHeaderDateForeground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayDayViewHeaderDayForeground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderForegroundDisabled" Color="{ThemeResource SystemColorGrayTextColor}"/>
+            <Thickness x:Key="SyncfusionDayViewHeaderBorderThickness">0,0,1,1</Thickness>
+            <Thickness x:Key="SyncfusionDayViewHeaderTopBorderThickness">0,1,0,0</Thickness>
+            <Thickness x:Key="SyncfusionTodayDayViewHeaderBorderThickness">0,4,0,0</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayDayViewHeaderDayFontWeight">SemiBold</text:FontWeight>
+            <text:FontWeight x:Key="SyncfusionTodayDayViewHeaderDateFontWeight">SemiBold</text:FontWeight>
+            <SolidColorBrush x:Key="SyncfusionDayViewHeaderBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayDayViewHeaderBackgroundPointerOver" Color="{ThemeResource SystemAccentColorDark1}" />
+
+            <!--TimelineViewHeader-->
+            <SolidColorBrush x:Key="SyncfusionTimelineViewHeaderForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayTimelineViewHeaderForeground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimelineViewHeaderForegroundDisabled" Color="{ThemeResource SystemColorGrayTextColor}"/>
+            <Thickness x:Key="SyncfusionTimelineViewHeaderBorderThickness">0,1,1,1</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayTimelineViewHeaderFontWeight">SemiBold</text:FontWeight>
+
+            <!--MonthViewHeader-->
+            <SolidColorBrush x:Key="SyncfusionMonthViewHeaderForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayMonthViewHeaderForeground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <Thickness x:Key="SyncfusionMonthViewHeaderBorderThickness">0,1,0,1</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayMonthViewHeaderFontWeight">SemiBold</text:FontWeight>
+
+            <!--MonthViewControl-->
+            <StaticResource x:Key="SyncfusionMonthViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--MonthCell-->
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellForegroundDisabled" Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackgroundDisabled" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthCellBackgroundSelected" Color="{ThemeResource SystemColorHighlightColor}" />
+            <StaticResource x:Key="SyncfusionMonthCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <SolidColorBrush x:Key="SyncfusionTodayMonthCellBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayMonthCellForeground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionTodayMonthCellHighlightBorderBrush" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionPreviousMonthCellBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPreviousMonthCellForeground" Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNextMonthCellBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionNextMonthCellForeground" Color="{ThemeResource SystemColorGrayTextColor}" />
+            <Thickness x:Key="SyncfusionTodayMonthCellHighlightBorderThickness">0,4,0,0</Thickness>
+            <Thickness x:Key="SyncfusionMonthCellBorderThickness">0,0,1,1</Thickness>
+            <text:FontWeight x:Key="SyncfusionTodayMonthCellFontWeight">SemiBold</text:FontWeight>
+
+            <!--Month WeekNumberCell-->
+            <SolidColorBrush x:Key="SyncfusionWeekNumberCellBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionWeekNumberCellForeground" Color="{ThemeResource SystemColorGrayTextColor}" />
+            <StaticResource x:Key="SyncfusionWeekNumberCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionWeekNumberCellBorderThickness">0,0,1,0</Thickness>
+
+            <!--DayViewControl-->
+            <StaticResource x:Key="SyncfusionDayViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--TimelineViewControl-->
+            <StaticResource x:Key="SyncfusionTimelineViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+
+            <!--TimeSlotCell-->
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBackgroundSelected" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeSlotCellBlackoutDayBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <StaticResource x:Key="SyncfusionTimeSlotCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionTimeSlotCellBorderThickness">0,0,1,1</Thickness>
+
+            <!--TimeRulerCell-->
+            <SolidColorBrush x:Key="SyncfusionTimeRulerCellBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimeRulerCellForeground" Color="{ThemeResource SystemColorGrayTextColor}" />
+            <StaticResource x:Key="SyncfusionTimeRulerCellBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionTimeRulerCellBorderThickness">0,0,1,0</Thickness>
+
+            <!--SpecialTimeRegion-->
+            <SolidColorBrush x:Key="SyncfusionSpecialTimeRegionControlBackground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpecialTimeRegionControlForeground" Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpecialTimeRegionControlBackgroundPointerOver" Color="{ThemeResource SystemColorHighlightColor}" />
+
+            <!--TimeIndicatorControl style-->
+            <SolidColorBrush x:Key="SyncfusionTimeIndicatorControlForeground" Color="{ThemeResource SystemColorHighlightColor}" />
+
+            <!--AppointmentControl-->
+            <SolidColorBrush x:Key="SyncfusionAppointmentControlBackground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionAppointmentControlForeground" Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAppointmentsCountControlForeground" Color="{ThemeResource SystemColorGrayTextColor}" />
+            <Thickness x:Key="SyncfusionAppointmentControlBorderThickness">1.5</Thickness>
+
+
+            <!--AllDayAppointmentViewControl-->
+            <SolidColorBrush x:Key="SyncfusionAllDayAppointmentViewControlBackground" Color="{StaticResource SystemAltHighColor}" />
+            <StaticResource x:Key="SyncfusionAllDayAppointmentViewControlBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <SolidColorBrush x:Key="SyncfusionAllDayAppointmentViewControlExpanderGlyphForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <StaticResource x:Key="SyncfusionAllDayAppointmentViewControlExpanderBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <Thickness x:Key="SyncfusionAllDayAppointmentViewControlBorderThickness">0,0,0,1</Thickness>
+
+            <!--MonthAgendaview -->
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <StaticResource x:Key="SyncfusionMonthAgendaViewBorderBrush" ResourceKey="SyncfusionSchedulerBorderBrush"/>
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewItemBackground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewItemForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewNoEventForeground" Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewDayForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewDateForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewTodayForeground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewTodayDateForeground" Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionMonthAgendaViewTodayBackground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <Thickness x:Key="SyncfusionMonthAgendaViewItemBorderThickness">1</Thickness>
+            <x:Double x:Key="SyncfusionMonthAgendaViewSelectedDateWidth">50</x:Double>
+
+            <!--Appointment editor-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewButtonBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewSaveButtonBackground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewHeaderForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewSaveButtonForeground" Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerAppointmentEditorViewDropDownIconForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <text:FontWeight x:Key="SyncfusionSchedulerAppointmentEditorViewHeaderFontWeight">SemiBold</text:FontWeight>
+
+            <!--SchedulerRecurrenceEditorView-->
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewButtonBackground" Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewOkButtonBackground" Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewHeaderForeground" Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSchedulerRecurrenceEditorViewOkButtonForeground" Color="{ThemeResource SystemColorHighlightTextColor}" />
+        </ResourceDictionary>
+
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
