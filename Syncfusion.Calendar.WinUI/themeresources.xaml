@@ -1,0 +1,367 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///Syncfusion.Core.WinUI/Themes/DensityStyles/Standard.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  Theme dictionaries  -->
+    <ResourceDictionary.ThemeDictionaries>
+
+        <ResourceDictionary x:Key="Light">
+            <!--  Resources and color keys for Calendar control  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarHeaderBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarHeaderBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemBackground"
+                             Color="Transparent" />
+
+            <!--  Resources and color keys for CalendarItems  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekNumberBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekNumberBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekNumberForeground"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundSelectedRange"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrushDisabled"
+                             Color="Transparent" />            
+            <SolidColorBrush x:Key="SyncfusionCalendarItemFillBorderBrushPointerOver"
+                             Color="{StaticResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrushPointerOver"
+                             Color="{StaticResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundSelectedRange"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColor}" Opacity="0.4"/>
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutlineBackgroundSelected"
+                             Color="{ThemeResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundSelected"
+                             Color="{StaticResource SystemBaseHighColor}"/>
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundInRange"
+                             Color="{StaticResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundSelectedPointerOver"
+                            Color="{ThemeResource SystemAccentColor}" Opacity="0.7" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemFilledBorderBrushSelected"
+                             Color="{ThemeResource SystemAccentColor}" Opacity="0.4" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutlineBorderBrushSelected"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrushSelected"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemForeground"
+                             Color="{StaticResource SystemChromeWhiteColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBackground"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBorderBrush"
+                             Color="{ThemeResource SystemAccentColor}" />            
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemInnerBorderBrushSelected"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemOuterBorderBrushSelected"
+                             Color="{ThemeResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemForegroundSelected"
+                             Color="{StaticResource SystemChromeWhiteColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrush"
+                             Color="Transparent"/>
+
+            <!--  Resources and color keys for Navigation buttons  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForeground"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForegroundDisabled"
+                             Color="{StaticResource SystemChromeDisabledHighColor}" />
+
+            <!--  Color keys for CalendarDatePicker control -->
+            <SolidColorBrush x:Key="SyncfusionCalendarDatePickerBackground"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDatePickerBorderBrush"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDatePickerForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+
+            <!--  Color keys for CalendarDateRangePicker control -->
+            <SolidColorBrush x:Key="SyncfusionCalendarDateRangePickerBackground"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDateRangePickerBorderBrush"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDateRangePickerForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="Dark">
+            <!--  Resources and color keys for Calendar control  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarHeaderBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarHeaderBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemBackground"
+                             Color="Transparent" />
+
+            <!--  Resources and color keys for CalendarItems  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekNumberBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekNumberBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekNumberForeground"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundSelectedRange"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrushDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemFillBorderBrushPointerOver"
+                             Color="{ThemeResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrushPointerOver"
+                             Color="{StaticResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundPointerOver"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundPointerOver"
+                             Color="{ThemeResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundSelectedRange"
+                             Color="{StaticResource SystemListLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColor}" Opacity="0.4"/>
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutlineBackgroundSelected"
+                             Color="{ThemeResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundSelected"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemFilledBorderBrushSelected"
+                             Color="{ThemeResource SystemAccentColor}" Opacity="0.4" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutlineBorderBrushSelected"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrushSelected"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemForeground"
+                             Color="{StaticResource SystemChromeWhiteColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBackground"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBorderBrush"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemInnerBorderBrushSelected"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemOuterBorderBrushSelected"
+                             Color="{ThemeResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemForegroundSelected"
+                             Color="{StaticResource SystemChromeWhiteColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrush"
+                             Color="{ThemeResource SystemControlTransparentBrush}"/>
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundInRange"
+                             Color="{StaticResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundSelectedPointerOver"
+                            Color="{ThemeResource SystemAccentColor}" Opacity="0.7" />
+
+            <!--  Resources and color keys for Navigation buttons  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForeground"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForegroundPressed"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForegroundDisabled"
+                             Color="{StaticResource SystemChromeDisabledHighColor}" />
+
+            <!--  Color keys for CalendarDatePicker control -->
+            <SolidColorBrush x:Key="SyncfusionCalendarDatePickerBackground"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDatePickerBorderBrush"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDatePickerForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+
+            <!--  Color keys for CalendarDateRangePicker control -->
+            <SolidColorBrush x:Key="SyncfusionCalendarDateRangePickerBackground"
+                             Color="{StaticResource SystemAltMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDateRangePickerBorderBrush"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDateRangePickerForeground"
+                             Color="{StaticResource SystemBaseMediumHighColor}" />
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="HighContrast">
+            <!--  Resources and color keys for Calendar control  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarHeaderBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarHeaderBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekItemBackground"
+                             Color="Transparent" />
+
+            <!--  Resources and color keys for CalendarItems  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekNumberBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekNumberBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarWeekNumberForeground"
+                             Color="{StaticResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundSelectedRange"
+                             Color="{StaticResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeForeground"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutOfScopeBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrushDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemFillBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundSelectedRange"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundSelected"
+                             Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutlineBackgroundSelected"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemForegroundSelected"
+                             Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionCalendarItemFilledBorderBrushSelected"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemOutlineBorderBrushSelected"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrushSelected"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemForeground"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBackground"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBorderBrush"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemBackgroundSelected"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemInnerBorderBrushSelected"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemOuterBorderBrushSelected"
+                             Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionCalendarTodayItemForegroundSelected"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBorderBrush"
+                             Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundInRange"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarItemBackgroundSelectedPointerOver"
+                            Color="{ThemeResource SystemAccentColor}" Opacity="0.7" />
+
+            <!--  Resources and color keys for Navigation buttons  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForegroundPressed"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarNavigationButtonForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+
+            <!--  Color keys for CalendarDatePicker control  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarDatePickerBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDatePickerBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDatePickerForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <!--  Color keys for CalendarDateRangePicker control  -->
+            <SolidColorBrush x:Key="SyncfusionCalendarDateRangePickerBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDateRangePickerBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionCalendarDateRangePickerForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+    <!--Resources for CalendarItems-->
+    <Thickness x:Key="SyncfusionCalendarItemMargin">0</Thickness>
+    <Thickness x:Key="SyncfusionCalendarItemBorderThickness">2</Thickness>
+    
+    <!--Resources for Calendar controls-->
+    <Thickness x:Key="SyncfusionCalendarBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionCalendarWeekItemBorderThickness">0</Thickness>
+    <Thickness x:Key="SyncfusionCalendarHeaderBorderThickness">0</Thickness>
+    <x:String x:Key="SyncfusionCalendarPreviousNavigationButtonGlyph">&#xE0E4;</x:String>
+    <x:String x:Key="SyncfusionCalendarNextNavigationButtonGlyph">&#xE0E5;</x:String>
+
+    <!--Resources for CalendarDatePicker control-->
+    <Thickness x:Key="SyncfusionCalendarDatePickerBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionCalendarDatePickerPadding">0, -1</Thickness>
+
+    <!--Resources for CalendarDateRangePicker control-->
+    <Thickness x:Key="SyncfusionCalendarDateRangePickerBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionCalendarDateRangePickerPadding">0, -1</Thickness>
+
+</ResourceDictionary>
