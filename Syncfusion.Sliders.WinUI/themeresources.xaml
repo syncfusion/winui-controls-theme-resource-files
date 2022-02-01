@@ -1,0 +1,198 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Light">
+            <x:Double x:Key="SyncfusionSliderActiveTrackCornerRadius">2</x:Double>
+            <x:Double x:Key="SyncfusionSliderInactiveTrackCornerRadius">2</x:Double>
+            <x:Double x:Key="SyncfusionSliderThumbOverlayOpacity">0.3</x:Double>
+            <x:Double x:Key="SyncfusionSliderInactiveTrackHeight">2</x:Double>
+            <x:Double x:Key="SyncfusionSliderActiveTrackHeight">2</x:Double>
+            <SolidColorBrush x:Key="SyncfusionSliderForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderMajorTickStroke"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderMinorTickStroke"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderToolTipForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderToolTipBackground"
+                             Color="{StaticResource SystemChromeMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderToolTipBorderBrush"
+                             Color="{StaticResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbOverlayFill"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderDividerFill"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderDividerStroke"
+                             Color="{StaticResource SystemBaseHighColor}" />
+
+            <!--Static brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFill"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFill"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackground"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionRangeSliderThumbOverlapBorderBrush"
+                             Color="{StaticResource SystemAltHighColor}" />
+
+            <!--Pointer pressed brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPressed"
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPressed"
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+
+            <!--Disabled brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillDisabled"
+                             Color="{StaticResource SystemChromeHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundDisabled"
+                             Color="{StaticResource SystemChromeHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderBackgroundDisabled"
+                             Color="{StaticResource SystemChromeHighColor}" />
+
+            <!--Pointer hover brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPointerOver"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPointerOver"
+                             Color="{ThemeResource SystemAccentColorLight1}" />
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="Dark">
+            <x:Double x:Key="SyncfusionSliderActiveTrackCornerRadius">2</x:Double>
+            <x:Double x:Key="SyncfusionSliderInactiveTrackCornerRadius">2</x:Double>
+            <x:Double x:Key="SyncfusionSliderThumbOverlayOpacity">0.3</x:Double>
+            <x:Double x:Key="SyncfusionSliderInactiveTrackHeight">2</x:Double>
+            <x:Double x:Key="SyncfusionSliderActiveTrackHeight">2</x:Double>
+            <SolidColorBrush x:Key="SyncfusionSliderForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderBorderBrush"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderMajorTickStroke"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderMinorTickStroke"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderToolTipForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderToolTipBackground"
+                             Color="{StaticResource SystemChromeMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderToolTipBorderBrush"
+                             Color="{StaticResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbOverlayFill"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderDividerFill"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderDividerStroke"
+                             Color="{StaticResource SystemBaseHighColor}" />
+
+            <!--Static brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFill"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFill"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackground"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionRangeSliderThumbOverlapBorderBrush"
+                             Color="{StaticResource SystemAltHighColor}" />
+
+            <!--Pointer pressed brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPressed"
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPressed"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPressed"
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+
+            <!--Disabled brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillDisabled"
+                             Color="{StaticResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillDisabled"
+                             Color="{StaticResource SystemChromeHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundDisabled"
+                             Color="{StaticResource SystemChromeHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderBackgroundDisabled"
+                             Color="{StaticResource SystemChromeHighColor}" />
+
+            <!--Pointer hover brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPointerOver"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPointerOver"
+                             Color="{ThemeResource SystemAccentColorLight1}" />
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="HighContrast">
+            <x:Double x:Key="SyncfusionSliderActiveTrackCornerRadius">2</x:Double>
+            <x:Double x:Key="SyncfusionSliderInactiveTrackCornerRadius">2</x:Double>
+            <x:Double x:Key="SyncfusionSliderThumbOverlayOpacity">0.3</x:Double>
+            <x:Double x:Key="SyncfusionSliderInactiveTrackHeight">2</x:Double>
+            <x:Double x:Key="SyncfusionSliderActiveTrackHeight">2</x:Double>
+            <SolidColorBrush x:Key="SyncfusionSliderForeground"
+                             Color="{ThemeResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderBorderBrush"
+                             Color="{ThemeResource SystemBaseLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderMajorTickStroke"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderMinorTickStroke"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderToolTipForeground"
+                             Color="{ThemeResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderToolTipBackground"
+                             Color="{ThemeResource SystemChromeMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderToolTipBorderBrush"
+                             Color="{ThemeResource SystemListMediumColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbOverlayFill"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderDividerFill"
+                             Color="{ThemeResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderDividerStroke"
+                             Color="{ThemeResource SystemBaseHighColor}" />
+
+            <!--Static brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFill"
+                             Color="{ThemeResource SystemChromeDisabledLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFill"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackground"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionRangeSliderThumbOverlapBorderBrush"
+                             Color="{ThemeResource SystemAltHighColor}" />
+
+            <!--Pointer pressed brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPressed"
+                             Color="{ThemeResource SystemChromeDisabledLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+
+            <!--Disabled brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillDisabled"
+                             Color="{ThemeResource SystemChromeHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillDisabled"
+                             Color="{ThemeResource SystemChromeHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundDisabled"
+                             Color="{ThemeResource SystemChromeHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderBackgroundDisabled"
+                             Color="{ThemeResource SystemChromeHighColor}" />
+
+            <!--Pointer hover brush-->
+            <SolidColorBrush x:Key="SyncfusionSliderInactiveTrackFillPointerOver"
+                             Color="{ThemeResource SystemChromeDisabledLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderActiveTrackFillPointerOver"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+
+</ResourceDictionary>
