@@ -1,0 +1,2451 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="ms-appx:///Syncfusion.Core.WinUI/Themes/Common.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <!--  Theme dictionaries  -->
+    <ResourceDictionary.ThemeDictionaries>
+
+        <ResourceDictionary x:Key="Light">
+            <!--  Resources and color keys for DropDownFlyoutPresenter used in drop down controls  -->
+            <x:Double x:Key="SyncfusionAcceptButtonSeparatorWidth">0</x:Double>
+            <StaticResource x:Key="SyncfusionDropDownFlyoutPresenterBackground"
+                             ResourceKey="AcrylicBackgroundFillColorDefaultBrush" />
+            <SolidColorBrush x:Key="SyncfusionDropDownFlyoutPresenterBorderBrush"
+                             Color="{StaticResource DividerStrokeColorDefault}" />
+            
+            <!--  Color keys for SfDropDownBase like DropDownColorPicker and DropDownColorPalette control  -->
+            <Thickness x:Key="SyncfusionDropDownButtonBorderThickness">0</Thickness>
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonSeparatorBorderBrush"
+                             Color="{StaticResource ControlStrokeColorSecondary}" />
+            <Thickness x:Key="SyncfusionDropDownBaseFocusVisualThickness">2</Thickness>
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackground"
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackgroundPressed"
+                             Color="{StaticResource ControlFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackgroundDisabled"
+                             Color="{StaticResource ControlFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionDropDownButtonBorderBrush"
+                            ResourceKey ="DropDownButtonControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionDropDownButtonBorderBrushPointerOver"
+                            ResourceKey="DropDownButtonControlElevationBorderBrush" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBorderBrushPressed"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBorderBrushDisabled"
+                             Color="{ThemeResource ControlStrokeColorOnAccentDisabled}" />
+
+            <LinearGradientBrush x:Key="DropDownButtonControlElevationBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.33" Color="{StaticResource ControlStrokeColorSecondary}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <!--  Color keys for SpinnerView / DateTimeSpinnerBase  -->
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewBorderBrush"
+                             Color="{StaticResource SurfaceStrokeColorFlyout}" />
+            <StaticResource x:Key="SyncfusionSpinnerViewBackground" 
+                            ResourceKey="AcrylicBackgroundFillColorDefaultBrush"/>
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBorderBrush"
+                             Color="{StaticResource DividerStrokeColorDefault}" />
+            <StaticResource x:Key="SyncfusionSpinnerColumnViewBackground" 
+                            ResourceKey="AcrylicBackgroundFillColorDefaultBrush"/>
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewHeaderForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewHeaderForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundSelected"
+                             Color="{StaticResource TextOnAccentFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackground"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPressed"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBackgroundSelected"
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundSelectedPointerOver" 
+                                                Color="{StaticResource SystemAccentColorLight1}"/>
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundSelectedPointerOver"
+                             Color="{StaticResource TextOnAccentFillColorPrimary}" />
+
+            <!--  Color keys for DatePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionDatePickerBackground"
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionDatePickerForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+
+
+            <!--  Color keys for TimePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionTimePickerBackground"
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionTimePickerForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+
+            <!-- Common Color keys for Date and time picker controls  -->
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundFocused"
+                             Color="{StaticResource ControlFillColorInputActive}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundDisabled"
+                             Color="{StaticResource ControlFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionPickerForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionPickerBorderBrushFocused"
+                             ResourceKey="ControlElevationBorderBrushFocused" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushKeyFocused"
+                             Color="{StaticResource FocusStrokeColorOuter}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushDisabled"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundPointerPressed"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushPointerPressed"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerClearButtonForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerPlaceholderForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerPlaceholderForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionPickerDefaultBorderBrush"  ResourceKey="SyncfusionPickerBorderBrush"/>
+
+            <LinearGradientBrush x:Key="SyncfusionPickerBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.33" Color="{StaticResource ControlStrokeColorSecondary}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush> 
+
+            <!--  Resources and color keys for ColorPalette controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPaletteBorderBrush"
+                             Color="{StaticResource ControlStrokeColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPointerOver"
+                             Color="{StaticResource FocusStrokeColorOuter}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemInnerBorderBrushPressed"
+                             Color="{StaticResource ControlSolidFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPressed"
+                             Color="{StaticResource FocusStrokeColorOuter}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteMoreColorIconForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteMoreColorWindowNewCurrentForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonBackground"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonBackgroundPressed"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonForegroundPressed"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteIconForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteIconForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteNoColorIconBorderFill"
+                             Color="#FFCACACA" />
+
+            <!--  Resources and color keys for ColorPicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerBorderBrush"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBorderBrush"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBackground"
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <LinearGradientBrush x:Key="SyncfusionSliderOuterThumbBorderBrush" 
+                                 MappingMode="Absolute" 
+                                 StartPoint="0,0" 
+                                 EndPoint="0,3">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.33" Color="{StaticResource ControlStrokeColorSecondary}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBackground"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBorderBrush"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionSliderBackground"
+                             Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBorderBrush"
+                             Color="{StaticResource ControlSolidFillColorDefault}"/>
+
+            <!--  Resources and color keys for ColorPicker Toggle button  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushPointerOver"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPointerOver"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPressed"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPressed"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushFocused"
+                             Color="{StaticResource FocusStrokeColorOuter}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundFocused"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundFocused"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundDisabled"
+                             Color="{StaticResource SubtleFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+
+            <!--  Resources and color keys for NumberBox and its dependent controls  -->
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForegroundFocused"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForegroundDisabled"
+                             Color="{StaticResource TemporaryTextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackground" 
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackgroundFocused" 
+                             Color="{StaticResource ControlFillColorInputActive}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackgroundDisabled"
+                             Color="{StaticResource ControlFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionNumberBoxBorderBrush"
+                            ResourceKey="ControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionNumberBoxBorderBrushPointerOver"
+                            ResourceKey="ControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionNumberBoxBorderBrushFocused"
+                            ResourceKey="ControlElevationBorderBrushFocused" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBorderBrushDisabled"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxHeaderForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxHeaderForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDescriptionForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDescriptionForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForegroundFocused" 
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackground" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackgroundPressed" 
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackgroundDisabled"
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForegroundPressed" 
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrush"
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrushPointerOver" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrushPressed"
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrushDisabled" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBorderBrush" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBorderBrushPointerOver" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBorderBrushPressed" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBackground" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBackgroundPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBackgroundPressed" 
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonForegroundPressed" 
+                             Color="{StaticResource TextFillColorTertiary}" />
+
+            <StaticResource x:Key="SyncfusionNumberBoxPopupBackground" 
+                            ResourceKey="AcrylicBackgroundFillColorDefaultBrush"/>
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPopupBorderBrush" 
+                             Color="{StaticResource SurfaceStrokeColorFlyout}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPopupIndicatorForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPopupIndicatorForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <Thickness x:Key="SyncfusionNumberBoxBorderThicknessFocused">1,1,1,2</Thickness>
+
+            <!-- Common Color keys for editor controls  -->
+            <SolidColorBrush x:Key="SyncfusionControlHeaderForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionControlDescriptionForeground"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+
+            <LinearGradientBrush x:Key="ControlElevationBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.5" Color="{StaticResource ControlStrongStrokeColorDefault}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ControlElevationBorderBrushFocused" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="1.0" Color="{ThemeResource SystemAccentColorDark1}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ComboBoxControlElevationBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.33" Color="{StaticResource ControlStrokeColorSecondary}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ControlElevationBorderBrushError" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="1.0" Color="{StaticResource SystemFillColorCritical}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <!--  Color keys for ComboBox control  -->
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackground" 
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundFocused" 
+                             Color="{StaticResource ControlFillColorInputActive}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundDisabled" 
+                             Color="{StaticResource ControlFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionComboBoxBorderBrush" 
+                            ResourceKey="ComboBoxControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionComboBoxBorderBrushPointerOver" 
+                            ResourceKey="ComboBoxControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionComboBoxBorderBrushFocused" 
+                            ResourceKey="ControlElevationBorderBrushFocused" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBorderBrushDisabled" 
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForeground" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundFocused"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundDisabled"
+                             Color="{StaticResource TemporaryTextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForegroundFocused" 
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionComboBoxDropDownBackground"
+                            ResourceKey="AcrylicBackgroundFillColorDefaultBrush" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownBorderBrush"
+                             Color="{StaticResource SurfaceStrokeColorFlyout}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForeground" 
+                             Color="{StaticResource TextFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundFocused" 
+                             Color="{StaticResource TextFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundPointerOver" 
+                             Color="{ThemeResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundPressed" 
+                             Color="{ThemeResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxHighlightBackground" 
+                             Color="{StaticResource ControlFillColorDefault}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxHighlightBorderBrush"
+                             Color="{StaticResource FocusStrokeColorOuter}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundPressed"
+                             Color="{StaticResource ControlFillColorTertiary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxBorderBrushPressed"
+                             Color="{StaticResource ControlStrokeColorDefault}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundPressed"
+                             Color="{StaticResource TextFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceHolderForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxHeaderForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDescriptionForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDescriptionForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrush" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrushPointerOver" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrushPressed" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrushDisabled"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackground" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackgroundPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackgroundPressed"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackgroundDisabled" 
+                             Color="{StaticResource SubtleFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxAppendForeground"
+                             Color="{StaticResource TextFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxSelectionIndicatorFillBrush" 
+                             Color="{ThemeResource SystemAccentColor}"/>
+
+            <Thickness x:Key="SyncfusionComboBoxBorderThicknessFocused">1,1,1,2</Thickness>
+
+
+            <!--  Color keys for SfComboBoxItem Control  -->
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackground"
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelected"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelectedPointerOver"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelectedPressed"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelectedDisabled"
+                             Color="{StaticResource SubtleFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundPressed" 
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundSelected"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBrush" 
+                             Color="{StaticResource TextOnAccentFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxBrush" 
+                             Color="{StaticResource ControlAltFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckPressedBrush" 
+                             Color="{StaticResource TextOnAccentFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckDisabledBrush" 
+                             Color="{StaticResource TextOnAccentFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPointerOverBrush" 
+                             Color="{StaticResource ControlAltFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPressedBrush" 
+                             Color="{StaticResource ControlAltFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxDisabledBrush" 
+                             Color="{StaticResource ControlAltFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedBrush" 
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedPointerOverBrush" 
+                             Color="{ThemeResource SystemAccentColorDark1}" Opacity="0.9" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedPressedBrush" 
+                             Color="{ThemeResource SystemAccentColorDark1}" Opacity="0.8" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedDisabledBrush" 
+                             Color="{ThemeResource AccentFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxBorderBrush" 
+                             Color="{StaticResource ControlStrongStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPointerOverBorderBrush" 
+                             Color="{StaticResource ControlStrongStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPressedBorderBrush" 
+                             Color="{StaticResource ControlStrongStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxDisabledBorderBrush" 
+                             Color="{StaticResource ControlStrongStrokeColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBorderBrushHighlight" 
+                             Color="{StaticResource FocusStrokeColorOuter}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorBrush" 
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorPointerOverBrush" 
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorPressedBrush" 
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorDisabledBrush" 
+                             Color="{ThemeResource AccentFillColorDisabled}" />
+
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownOverlayBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownOverlayBackgroundPressed"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+
+            <!--  Color keys for ComboBox TokenItem control  -->
+            <Thickness x:Key="SyncfusionComboBoxTokenItemBorderThickness">0</Thickness>
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackground" 
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackgroundPointerOver" 
+                             Color="{StaticResource ControlAltFillColorQuarternary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackgroundPressed"
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackgroundDisabled" 
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForeground" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForegroundPressed" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrushPointerOver"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrushPressed"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrushDisabled" 
+                             Color="Transparent" />
+
+            <!--  Color keys for SegmentedControl  -->
+            <SolidColorBrush x:Key="SyncfusionSegmentedControlBackground" Color="{StaticResource ControlFillColorDefault}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverBackground" Color="{StaticResource SystemAccentColorLight1}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemPressedBackground" Color="{StaticResource SystemAccentColorLight2}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverBackground" Color="{StaticResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedBackground" Color="{StaticResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemForeground" Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverForeground" Color="{StaticResource TextOnAccentFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemPressedForeground" Color="{StaticResource TextOnAccentFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverForeground" Color="{StaticResource TextOnAccentFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedForeground" Color="{StaticResource TextOnAccentFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemDisabledBackground" Color="{StaticResource AccentFillColorDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemDisabledForeground" Color="{StaticResource TextOnAccentFillColorDisabled}"/>
+
+            <LinearGradientBrush x:Key="SyncfusionSegmentedControlBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.5" Color="{StaticResource ControlStrokeColorSecondary}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <!--  Color keys for AutoComplete control  -->
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackground" 
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackgroundFocused" 
+                             Color="{StaticResource ControlFillColorInputActive}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackgroundDisabled" 
+                             Color="{StaticResource ControlFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionAutoCompleteBorderBrush" 
+                             ResourceKey="ControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionAutoCompleteBorderBrushPointerOver" 
+                             ResourceKey="ControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionAutoCompleteBorderBrushFocused" 
+                             ResourceKey="ControlElevationBorderBrushFocused" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBorderBrushDisabled" 
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForeground" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForegroundFocused"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForegroundDisabled"
+                             Color="{StaticResource TemporaryTextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteHeaderForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteDescriptionForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+             <SolidColorBrush x:Key="SyncfusionAutoCompleteDescriptionForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForegroundFocused" 
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionAutoCompleteDropDownBackground" 
+                            ResourceKey="AcrylicBackgroundFillColorDefaultBrush" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteDropDownBorderBrush" 
+                             Color="{StaticResource SurfaceStrokeColorFlyout}" />
+           
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrush" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrushPointerOver" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrushPressed"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrushDisabled"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackground" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackgroundPressed" 
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackgroundDisabled" 
+                             Color="{StaticResource SubtleFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteAppendForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            
+            <Thickness x:Key="SyncfusionAutoCompleteBorderThicknessFocused">1,1,1,2</Thickness>
+
+            <!--  Color keys for SfAutoCompleteItem Control  -->
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackground"
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelected"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelectedPointerOver"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelectedPressed"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelectedDisabled"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundPressed" 
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundSelected"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorBrush" 
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorPointerOverBrush" 
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorPressedBrush"
+                             Color="{ThemeResource SystemAccentColorDark1}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorDisabledBrush"
+                             Color="{ThemeResource AccentFillColorDisabled}" />
+
+            <!--  Color keys for AutoComplete TokenItem control  -->
+            <Thickness x:Key="SyncfusionAutoCompleteTokenItemBorderThickness">0</Thickness>
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackground" 
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackgroundPointerOver" 
+                             Color="{StaticResource ControlAltFillColorQuarternary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackgroundPressed"
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackgroundDisabled" 
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForeground" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForegroundPressed" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrushPointerOver"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrushPressed"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrushDisabled" 
+                             Color="Transparent" />
+            
+            <!--Color keys for Rating control-->
+            <SolidColorBrush x:Key="SyncfusionRatingRatedItemFill" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionRatingUnratedItemFill" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemSelectedStateFillPointerOver" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionUnratingItemClearedStateFillPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionRatingRatedItemStroke" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionRatingUnratedItemStroke" 
+                             Color="{StaticResource ControlStrongFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemSelectedStateStrokePointerOver" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionUnratingItemClearedStateStrokePointerOver" 
+                             Color="{StaticResource ControlStrongFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemToolTipBorderBrush" 
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemToolTipFont" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemToolTipBackground" 
+                             Color="{StaticResource SolidBackgroundFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemFillDisabled" 
+                             Color="{StaticResource AccentFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemStrokeDisabled" 
+                             Color="{StaticResource AccentFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionRatingPlaceholderRatedItemFill"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionRatingPlaceholderRatedItemStroke"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+
+            <!--Color keys for SfMaskedTextBox control-->
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBorderBrushPointerOver"
+                             Color="{StaticResource ControlStrokeColorDefault}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackgroundDisabled"
+                             Color="{StaticResource ControlFillColorDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBorderBrushDisabled"
+                             Color="{StaticResource ControlStrokeColorOnAccentDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackgroundFocused"
+                             Color="{StaticResource ControlFillColorInputActive}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForegroundFocused"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <StaticResource x:Key="SyncfusionMaskedTextBoxBorderBrushFocused"
+                             ResourceKey="ControlElevationBorderBrushFocused"/>
+            <StaticResource x:Key="SyncfusionMaskedTextBoxBorderBrush"
+                            ResourceKey="ControlElevationBorderBrush"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForeground"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackground"
+                             Color="{StaticResource ControlFillColorDefault}"/>
+            <StaticResource x:Key="SyncfusionMaskedTextBoxBorderBrushError"
+                            ResourceKey="ControlElevationBorderBrushError"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxCriticalIconForeground"
+                            Color="{StaticResource SystemFillColorCritical}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxInformationIconForeground"
+                            Color="{StaticResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxWarningIconForeground"
+                            Color="{StaticResource SystemFillColorCaution}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxSuccessIconForeground"
+                            Color="{StaticResource SystemFillColorSuccess}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedErrorIconToolTipFont" 
+                            Color="{StaticResource TextFillColorPrimary}"/>
+
+        </ResourceDictionary>
+
+        <ResourceDictionary x:Key="Dark">
+            <!--  Resources and color keys for DropDownFlyoutPresenter used in drop down controls  -->
+            <x:Double x:Key="SyncfusionAcceptButtonSeparatorWidth">0</x:Double>
+            <StaticResource x:Key="SyncfusionDropDownFlyoutPresenterBackground"
+                             ResourceKey="AcrylicBackgroundFillColorDefaultBrush" />
+            <SolidColorBrush x:Key="SyncfusionDropDownFlyoutPresenterBorderBrush"
+                             Color="{StaticResource DividerStrokeColorDefault}" />
+
+
+            <!--  Color keys for SfDropDownBase like DropDownColorPicker and DropDownColorPalette control  -->
+            <Thickness x:Key="SyncfusionDropDownButtonBorderThickness">0</Thickness>
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonSeparatorBorderBrush"
+                             Color="{StaticResource ControlStrokeColorSecondary}" />
+            <Thickness x:Key="SyncfusionDropDownBaseFocusVisualThickness">2</Thickness>
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackground"
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackgroundPressed"
+                             Color="{StaticResource ControlFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackgroundDisabled"
+                             Color="{StaticResource ControlFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionDropDownButtonBorderBrush"
+                            ResourceKey ="DropDownButtonControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionDropDownButtonBorderBrushPointerOver"
+                            ResourceKey="DropDownButtonControlElevationBorderBrush" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBorderBrushPressed"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBorderBrushDisabled"
+                             Color="{ThemeResource ControlStrokeColorOnAccentDisabled}" />
+
+            <LinearGradientBrush x:Key="DropDownButtonControlElevationBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.33" Color="{StaticResource ControlStrokeColorSecondary}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <!--  Color keys for SpinnerView / DateTimeSpinnerBase  -->
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewBorderBrush"
+                             Color="{StaticResource SurfaceStrokeColorFlyout}" />
+            <StaticResource x:Key="SyncfusionSpinnerViewBackground" 
+                            ResourceKey="AcrylicBackgroundFillColorDefaultBrush"/>
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBorderBrush"
+                             Color="{StaticResource DividerStrokeColorDefault}" />
+            <StaticResource x:Key="SyncfusionSpinnerColumnViewBackground" 
+                            ResourceKey="AcrylicBackgroundFillColorDefaultBrush"/>
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewHeaderForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewHeaderForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundSelected"
+                             Color="{StaticResource TextOnAccentFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundDisabled"
+                             Color="{StaticResource SystemBaseMediumLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackground"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPressed"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBackgroundSelected"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundSelectedPointerOver" 
+                                                Color="{StaticResource SystemAccentColorLight1}"/>
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundSelectedPointerOver"
+                             Color="{StaticResource TextOnAccentFillColorPrimary}" />
+
+            <!--  Color keys for DatePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionDatePickerBackground"
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionDatePickerForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+
+
+            <!--  Color keys for TimePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionTimePickerBackground"
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionTimePickerForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            
+            <!-- Common Color keys for Date and time picker controls  -->
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundFocused"
+                             Color="{StaticResource ControlFillColorInputActive}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundDisabled"
+                             Color="{StaticResource ControlFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionPickerForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionPickerBorderBrushFocused"
+                             ResourceKey="ControlElevationBorderBrushFocused" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushKeyFocused"
+                             Color="{StaticResource FocusStrokeColorOuter}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushDisabled"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundPointerPressed"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushPointerPressed"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerClearButtonForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerPlaceholderForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerPlaceholderForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionPickerDefaultBorderBrush"  ResourceKey="SyncfusionPickerBorderBrush"/>
+
+            <LinearGradientBrush x:Key="SyncfusionPickerBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.33" Color="{StaticResource ControlStrokeColorSecondary}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush> 
+
+            <!--  Resources and color keys for ColorPalette controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPaletteBorderBrush"
+                             Color="{StaticResource ControlStrokeColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPointerOver"
+                             Color="{StaticResource FocusStrokeColorOuter}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemInnerBorderBrushPressed"
+                             Color="{StaticResource FocusStrokeColorInner}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPressed"
+                             Color="{StaticResource FocusStrokeColorOuter}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrush"
+                             Color="{StaticResource SystemChromeLowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBackground"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBorderBrush"
+                             Color="{StaticResource SurfaceStrokeColorFlyout}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteMoreColorIconForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteMoreColorWindowNewCurrentForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonBackground"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonBackgroundPressed"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonForegroundPressed"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteIconForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteIconForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteNoColorIconBorderFill"
+                             Color="#FF7E7E7E" />
+
+            <!--  Resources and color keys for ColorPicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerBorderBrush"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBorderBrush"
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBackground"
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <LinearGradientBrush x:Key="SyncfusionSliderOuterThumbBorderBrush"
+                                 MappingMode="Absolute" 
+                                 StartPoint="0,0" EndPoint="0,3">
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.33" Color="{StaticResource ControlStrokeColorSecondary}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+            <SolidColorBrush x:Key="SyncfusionSliderBackground"
+                             Color="{StaticResource SystemAltHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBorderBrush"
+                             Color="{StaticResource ControlSolidFillColorDefault}"/>
+
+            <!--  Resources and color keys for ColorPicker Toggle button  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushPointerOver"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPressed"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPressed"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushFocused"
+                             Color="{StaticResource FocusStrokeColorFocused}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundFocused"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundFocused"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundDisabled"
+                             Color="{StaticResource SubtleFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+
+            <!--  Resources and color keys for NumberBox and its dependent controls  -->
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForeground" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForegroundFocused" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForegroundDisabled"
+                             Color="{StaticResource TemporaryTextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackground" 
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackgroundFocused" 
+                             Color="{StaticResource ControlFillColorInputActive}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackgroundDisabled"
+                             Color="{StaticResource ControlFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionNumberBoxBorderBrush"
+                            ResourceKey="ControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionNumberBoxBorderBrushPointerOver" 
+                            ResourceKey="ControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionNumberBoxBorderBrushFocused"
+                            ResourceKey="ControlElevationBorderBrushFocused" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBorderBrushDisabled" 
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+
+            <SolidColorBrush x:Key="SyncfusionNumberBoxHeaderForeground" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxHeaderForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDescriptionForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDescriptionForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForegroundFocused"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackground" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackgroundPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackgroundPressed"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackgroundDisabled" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrush" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrushPointerOver"
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrushPressed" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrushDisabled" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBorderBrush" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBorderBrushPointerOver"
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBorderBrushPressed"
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBackground" 
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBackgroundPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBackgroundPressed" 
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+
+            <StaticResource x:Key="SyncfusionNumberBoxPopupBackground"
+                            ResourceKey="AcrylicBackgroundFillColorDefaultBrush" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPopupBorderBrush" 
+                             Color="{StaticResource SurfaceStrokeColorFlyout}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPopupIndicatorForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPopupIndicatorForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <Thickness x:Key="SyncfusionNumberBoxBorderThicknessFocused">1,1,1,2</Thickness>
+            
+            <!-- Common Color keys for editor controls  -->
+            <SolidColorBrush x:Key="SyncfusionControlHeaderForeground"
+                             Color="{StaticResource SystemBaseHighColor}" />
+            <SolidColorBrush x:Key="SyncfusionControlDescriptionForeground"
+                             Color="{StaticResource SystemBaseMediumColor}" />
+
+            <LinearGradientBrush x:Key="ControlElevationBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.5" Color="{StaticResource ControlStrongStrokeColorDefault}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ControlElevationBorderBrushFocused" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="1.0" Color="{ThemeResource SystemAccentColorLight2}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+            
+            <LinearGradientBrush x:Key="ComboBoxControlElevationBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,3">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.33" Color="{StaticResource ControlStrokeColorSecondary}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="ControlElevationBorderBrushError" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="1.0" Color="{StaticResource SystemFillColorCritical}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <!--  Color keys for ComboBox control  -->
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackground" 
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundFocused" 
+                             Color="{StaticResource ControlFillColorInputActive}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundDisabled" 
+                             Color="{StaticResource ControlFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionComboBoxBorderBrush" 
+                            ResourceKey="ComboBoxControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionComboBoxBorderBrushPointerOver" 
+                            ResourceKey="ComboBoxControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionComboBoxBorderBrushFocused" 
+                            ResourceKey="ControlElevationBorderBrushFocused" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBorderBrushDisabled" 
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForeground" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundFocused"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundDisabled"
+                             Color="{StaticResource TemporaryTextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForegroundFocused"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDescriptionForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+             <SolidColorBrush x:Key="SyncfusionComboBoxDescriptionForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionComboBoxDropDownBackground"
+                            ResourceKey="AcrylicBackgroundFillColorDefaultBrush" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownBorderBrush" 
+                             Color="{StaticResource SurfaceStrokeColorFlyout}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForeground" 
+                             Color="{StaticResource TextFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundFocused" 
+                             Color="{StaticResource TextFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundPointerOver"
+                             Color="{ThemeResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundPressed"
+                             Color="{ThemeResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxHighlightBackground" 
+                             Color="{StaticResource ControlFillColorDefault}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxHighlightBorderBrush"
+                             Color="{StaticResource FocusStrokeColorOuter}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundPressed" 
+                             Color="{StaticResource ControlFillColorTertiary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxBorderBrushPressed" 
+                             Color="{StaticResource ControlStrokeColorDefault}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundPressed" 
+                             Color="{StaticResource TextFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceHolderForegroundPressed" 
+                             Color="{StaticResource TextFillColorTertiary}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxSelectionIndicatorFillBrush"
+                             Color="{ThemeResource SystemAccentColorLight2}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxHeaderForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrush" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrushPointerOver"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrushPressed"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrushDisabled"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackground"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackgroundPressed" 
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackgroundDisabled" 
+                             Color="{StaticResource SubtleFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForegroundPressed" 
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxAppendForeground"
+                             Color="{StaticResource TextFillColorSecondary}"/>
+
+            <Thickness x:Key="SyncfusionComboBoxBorderThicknessFocused">1,1,1,2</Thickness>
+
+            <!--  Color keys for SfComboBoxItem Control  -->
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackground"
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelected"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelectedPointerOver"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelectedPressed"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelectedDisabled"
+                             Color="{StaticResource SubtleFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundPressed" 
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundSelected"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBrush" 
+                             Color="{StaticResource TextOnAccentFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxBrush" 
+                             Color="{StaticResource ControlAltFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckPressedBrush" 
+                             Color="{StaticResource TextOnAccentFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckDisabledBrush" 
+                             Color="{StaticResource TextOnAccentFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPointerOverBrush" 
+                             Color="{StaticResource ControlAltFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPressedBrush" 
+                             Color="{StaticResource ControlAltFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxDisabledBrush" 
+                             Color="{StaticResource ControlAltFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedBrush" 
+                             Color="{ThemeResource SystemAccentColorLight2}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedPointerOverBrush" 
+                             Color="{ThemeResource SystemAccentColorLight2}" Opacity="0.9" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedPressedBrush" 
+                             Color="{ThemeResource SystemAccentColorLight2}" Opacity="0.8" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedDisabledBrush" 
+                             Color="{ThemeResource AccentFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxBorderBrush" 
+                             Color="{StaticResource ControlStrongStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPointerOverBorderBrush" 
+                             Color="{StaticResource ControlStrongStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPressedBorderBrush" 
+                             Color="{StaticResource ControlStrongStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxDisabledBorderBrush" 
+                             Color="{StaticResource ControlStrongStrokeColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBorderBrushHighlight" 
+                             Color="{StaticResource FocusStrokeColorOuter}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorBrush" 
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorPointerOverBrush"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorPressedBrush"
+                             Color="{ThemeResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorDisabledBrush"
+                             Color="{ThemeResource AccentFillColorDisabled}" />
+
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownOverlayBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownOverlayBackgroundPressed"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+
+            <!--  Color keys for ComboBox TokenItem control  -->
+            <Thickness x:Key="SyncfusionComboBoxTokenItemBorderThickness">0</Thickness>
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackground" 
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackgroundPointerOver" 
+                             Color="{StaticResource ControlAltFillColorQuarternary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackgroundPressed"
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackgroundDisabled" 
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForeground" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForegroundPressed" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrushPointerOver"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrushPressed"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrushDisabled" 
+                             Color="Transparent" />
+
+            <!--  Color keys for SegmentedControl  -->
+            <SolidColorBrush x:Key="SyncfusionSegmentedControlBackground" Color="{StaticResource ControlFillColorDefault}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverBackground" Color="{StaticResource SystemAccentColorLight1}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemPressedBackground" Color="{StaticResource SystemAccentColorLight2}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverBackground" Color="{StaticResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedBackground" Color="{StaticResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemForeground" Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverForeground" Color="{StaticResource TextOnAccentFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemPressedForeground" Color="{StaticResource TextOnAccentFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverForeground" Color="{StaticResource TextOnAccentFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedForeground" Color="{StaticResource TextOnAccentFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemDisabledBackground" Color="{StaticResource AccentFillColorDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemDisabledForeground" Color="{StaticResource TextOnAccentFillColorDisabled}"/>
+
+            <LinearGradientBrush x:Key="SyncfusionSegmentedControlBorderBrush" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="0.5" Color="{StaticResource ControlStrokeColorSecondary}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+            
+            <!--  Color keys for AutoComplete control  -->
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackground" 
+                             Color="{StaticResource ControlFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackgroundFocused" 
+                             Color="{StaticResource ControlFillColorInputActive}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackgroundDisabled" 
+                             Color="{StaticResource ControlFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionAutoCompleteBorderBrush" 
+                             ResourceKey="ControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionAutoCompleteBorderBrushPointerOver" 
+                             ResourceKey="ControlElevationBorderBrush" />
+            <StaticResource x:Key="SyncfusionAutoCompleteBorderBrushFocused" 
+                             ResourceKey="ControlElevationBorderBrushFocused" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBorderBrushDisabled" 
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForeground" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForegroundFocused"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForegroundDisabled"
+                             Color="{StaticResource TemporaryTextFillColorDisabled}" />
+
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteHeaderForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForegroundFocused"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteDescriptionForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteDescriptionForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <StaticResource x:Key="SyncfusionAutoCompleteDropDownBackground" 
+                            ResourceKey="AcrylicBackgroundFillColorDefaultBrush" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteDropDownBorderBrush" 
+                             Color="{StaticResource SurfaceStrokeColorFlyout}" />
+           
+           
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrush" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrushPointerOver" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrushPressed"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrushDisabled"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackground"
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackgroundPointerOver"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackgroundPressed" 
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackgroundDisabled"
+                             Color="{StaticResource SubtleFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForeground" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForegroundPointerOver"
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForegroundPressed" 
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForegroundDisabled" 
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteAppendForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+
+            <Thickness x:Key="SyncfusionAutoCompleteBorderThicknessFocused">1,1,1,2</Thickness>
+
+            <!--  Color keys for SfAutoCompleteItem Control  -->
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackground"
+                             Color="{StaticResource SubtleFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelected"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelectedPointerOver"
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelectedPressed"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelectedDisabled"
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundPressed" 
+                             Color="{StaticResource SubtleFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForeground"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundSelected"
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundPressed"
+                             Color="{StaticResource TextFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorBrush"
+                             Color="{ThemeResource SystemAccentColorLight2}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorPointerOverBrush"
+                             Color="{ThemeResource SystemAccentColorLight2}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorPressedBrush" 
+                             Color="{ThemeResource SystemAccentColorLight2}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorDisabledBrush" 
+                             Color="{ThemeResource AccentFillColorDisabled}" />
+
+            <!--  Color keys for AutoComplete TokenItem control  -->
+            <Thickness x:Key="SyncfusionAutoCompleteTokenItemBorderThickness">0</Thickness>
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackground" 
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackgroundPointerOver" 
+                             Color="{StaticResource ControlAltFillColorQuarternary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackgroundPressed"
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackgroundDisabled" 
+                             Color="{StaticResource ControlAltFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForeground" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForegroundPointerOver" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForegroundPressed" 
+                             Color="{StaticResource TextFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrushPointerOver"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrushPressed"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrushDisabled" 
+                             Color="Transparent" />
+
+            <!--Color keys for Rating control-->
+            <SolidColorBrush x:Key="SyncfusionRatingRatedItemFill" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionRatingUnratedItemFill" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemSelectedStateFillPointerOver" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionUnratingItemClearedStateFillPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionRatingRatedItemStroke" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionRatingUnratedItemStroke" 
+                             Color="{StaticResource ControlStrongFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemSelectedStateStrokePointerOver" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionUnratingItemClearedStateStrokePointerOver" 
+                             Color="{StaticResource ControlStrongFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemToolTipBorderBrush" 
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemToolTipFont" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemToolTipBackground" 
+                             Color="{StaticResource SolidBackgroundFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemFillDisabled" 
+                             Color="{StaticResource AccentFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemStrokeDisabled" 
+                             Color="{StaticResource AccentFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionRatingPlaceholderRatedItemFill"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionRatingPlaceholderRatedItemStroke"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+
+            <!--Color keys for SfMaskedTextBox control-->
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBorderBrushPointerOver"
+                             Color="{StaticResource ControlStrokeColorDefault}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackgroundDisabled"
+                             Color="{StaticResource ControlFillColorDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBorderBrushDisabled"
+                             Color="{StaticResource ControlStrokeColorOnAccentDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackgroundFocused"
+                             Color="{StaticResource ControlFillColorInputActive}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForegroundFocused"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <StaticResource x:Key="SyncfusionMaskedTextBoxBorderBrushFocused"
+                             ResourceKey="ControlElevationBorderBrushFocused"/>
+            <StaticResource x:Key="SyncfusionMaskedTextBoxBorderBrush"
+                            ResourceKey="ControlElevationBorderBrush"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForeground"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackground"
+                             Color="{StaticResource ControlFillColorDefault}"/>
+            <StaticResource x:Key="SyncfusionMaskedTextBoxBorderBrushError"
+                            ResourceKey="ControlElevationBorderBrushError"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxCriticalIconForeground"
+                            Color="{StaticResource SystemFillColorCritical}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxInformationIconForeground"
+                            Color="{StaticResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxWarningIconForeground"
+                            Color="{StaticResource SystemFillColorCaution}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxSuccessIconForeground"
+                            Color="{StaticResource SystemFillColorSuccess}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedErrorIconToolTipFont" 
+                            Color="{StaticResource TextFillColorPrimary}"/>
+
+        </ResourceDictionary>
+        
+        <ResourceDictionary x:Key="HighContrast">
+            <!--  Resources and color keys for DropDownFlyoutPresenter used in drop down controls  -->
+            <x:Double x:Key="SyncfusionAcceptButtonSeparatorWidth">0</x:Double>
+            <SolidColorBrush x:Key="SyncfusionDropDownFlyoutPresenterBackground"
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownFlyoutPresenterBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <!--  Color keys for SfDropDownBase like DropDownColorPicker and DropDownColorPalette control  -->
+            <Thickness x:Key="SyncfusionDropDownButtonBorderThickness">0</Thickness>
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonSeparatorBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <Thickness x:Key="SyncfusionDropDownBaseFocusVisualThickness">4</Thickness>
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBackgroundDisabled"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBorderBrushPressed"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDropDownButtonBorderBrushDisabled"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+
+            <!--  Color keys for SpinnerView / DateTimeSpinnerBase  -->
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerViewHeaderForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewHeaderForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundSelected"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerColumnViewBackgroundSelected"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemBackgroundSelectedPointerOver" 
+                                                Color="{StaticResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSpinnerItemForegroundSelectedPointerOver"
+                             Color="{StaticResource SystemColorButtonTextColor}" />
+
+            <!--  Color keys for DatePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionDatePickerBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionDatePickerForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+
+
+            <!--  Color keys for TimePicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionTimePickerBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionTimePickerForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <!-- Common Color keys for Date and time picker controls  -->
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundFocused"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundDisabled"
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerForegroundDisabled"
+                             Color="{StaticResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushFocused"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushKeyFocused"
+                             Color="{StaticResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBackgroundPointerPressed"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerBorderBrushPointerPressed"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerForeground"
+                             Color="{StaticResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerClearButtonForeground"
+                             Color="{StaticResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerPlaceholderForeground"
+                             Color="{StaticResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionDateTimePickerPlaceholderForegroundDisabled"
+                             Color="{StaticResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionPickerDefaultBorderBrush"  
+                              Color="{StaticResource SystemColorButtonTextColor}" />
+
+            <!--  Resources and color keys for ColorPalette controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPaletteBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemInnerBorderBrushPressed"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrushPressed"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorItemBorderBrush"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionMoreColorsViewBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteMoreColorIconForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteMoreColorWindowNewCurrentForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteButtonForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteIconForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteIconForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPaletteNoColorIconBorderFill"
+                             Color="#FF7E7E7E" />
+
+            <!--  Resources and color keys for ColorPicker controls  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBorderBrush"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerComboBoxBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderOuterThumbBorderBrush" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionSliderBackground"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionSliderThumbBorderBrush"
+                             Color="{StaticResource SystemColorButtonTextColor}"/>
+
+            <!--  Resources and color keys for ColorPicker Toggle button  -->
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPointerOver"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundPressed"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBorderBrushFocused"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundFocused"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundFocused"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderBackground"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionColorPickerExpanderForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+
+            <!--  Resources and color keys for NumberBox and its dependent controls  -->
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForegroundPointerOver" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForegroundFocused" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxForegroundDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackground" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackgroundFocused" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBorderBrushFocused" 
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxBorderBrushDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            
+            <SolidColorBrush x:Key="SyncfusionNumberBoxHeaderForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxHeaderForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDescriptionForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDescriptionForegroundDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForegroundPointerOver" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPlaceholderForegroundFocused"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackground" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackgroundPointerOver" 
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownForegroundDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrush"
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrushPointerOver" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrushPressed" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxUpDownBorderBrushDisabled"
+                             Color="Transparent" />
+
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBackground" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBackgroundPressed" 
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonBorderBrushPressed"
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxDeleteButtonForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPopupBackground"
+                             Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPopupBorderBrush" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPopupIndicatorForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionNumberBoxPopupIndicatorForegroundDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <Thickness x:Key="SyncfusionNumberBoxBorderThicknessFocused">2</Thickness>
+
+            <!-- Common Color keys for editor controls  -->
+            <SolidColorBrush x:Key="SyncfusionControlHeaderForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionControlDescriptionForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <LinearGradientBrush x:Key="ControlElevationBorderBrushError" MappingMode="Absolute" StartPoint="0,0" EndPoint="0,2">
+                <LinearGradientBrush.RelativeTransform>
+                    <ScaleTransform ScaleY="-1" CenterY="0.5"/>
+                </LinearGradientBrush.RelativeTransform>
+                <LinearGradientBrush.GradientStops>
+                    <GradientStop Offset="1.0" Color="{StaticResource SystemFillColorCritical}"/>
+                    <GradientStop Offset="1.0" Color="{StaticResource ControlStrokeColorDefault}"/>
+                </LinearGradientBrush.GradientStops>
+            </LinearGradientBrush>
+
+            <!--  Color keys for ComboBox control  -->
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackground" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundFocused" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundDisabled" 
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBorderBrushFocused"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxBorderBrushDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundPointerOver"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundFocused"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForegroundPointerOver" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForegroundFocused"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceholderForegroundDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownBackground"
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundFocused"
+                             Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundPointerOver" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundPressed" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownGlyphForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxSelectionIndicatorFillBrush" 
+                             Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxHighlightBackground"
+                             Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxHighlightBorderBrush"
+                             Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxBackgroundPressed"
+                             Color="{ThemeResource SystemColorButtonFaceColor}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxBorderBrushPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxForegroundPressed"
+                             Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxPlaceHolderForegroundPressed"
+                             Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionComboBoxDescriptionForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDescriptionForegroundDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrush"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrushPointerOver" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrushPressed" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBorderBrushDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackground" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForegroundPointerOver" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForegroundPressed" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxClearButtonForegroundDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxHeaderForegroundDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxAppendForeground"
+                             Color="{StaticResource TextFillColorSecondary}"/>
+            
+            <Thickness x:Key="SyncfusionComboBoxBorderThicknessFocused">2</Thickness>
+
+            <!--  Color keys for SfComboBoxItem Control  -->
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackground" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelected" 
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelectedPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelectedPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundSelectedDisabled"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBackgroundPressed" 
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForeground"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundSelected" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundPointerOver" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBrush" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxBrush" 
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckPressedBrush" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckDisabledBrush" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPointerOverBrush" 
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPressedBrush" 
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxDisabledBrush" 
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedBrush" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedPointerOverBrush" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedPressedBrush" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxSelectedDisabledBrush" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPointerOverBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxPressedBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemCheckBoxDisabledBorderBrush" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemBorderBrushHighlight" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorBrush" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorPointerOverBrush" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorPressedBrush"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxItemSelectionIndicatorDisabledBrush" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownOverlayBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxDropDownOverlayBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+
+            <!--  Color keys for ComboBox TokenItem control  -->
+            <Thickness x:Key="SyncfusionComboBoxTokenItemBorderThickness">1</Thickness>
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackground" 
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackgroundPointerOver" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackgroundPressed"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBackgroundDisabled" 
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForegroundPointerOver" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForegroundPressed" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrushPressed"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionComboBoxTokenItemBorderBrushDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+
+            <!--  Color keys for SegmentedControl  -->
+            <SolidColorBrush x:Key="SyncfusionSegmentedControlBackground" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemBackground" Color="Transparent"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverBackground" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemPressedBackground" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverBackground" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedBackground" Color="{ThemeResource SystemColorHighlightColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemForeground" Color="{ThemeResource SystemColorWindowTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemHoverForeground" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemPressedForeground" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedHoverForeground" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemSelectedForeground" Color="{ThemeResource SystemColorHighlightTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedControlBorderBrush" Color="{ThemeResource SystemColorButtonTextColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemDisabledBackground" Color="{ThemeResource SystemColorWindowColor}"/>
+            <SolidColorBrush x:Key="SyncfusionSegmentedItemDisabledForeground" Color="{ThemeResource SystemColorGrayTextColor}"/>
+
+            <!--  Color keys for AutoComplete control  -->
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackground" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackgroundFocused" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBackgroundDisabled" 
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBorderBrushFocused"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteBorderBrushDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForegroundPointerOver"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForegroundFocused"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteHeaderForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForegroundPointerOver" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForegroundFocused" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompletePlaceholderForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteDescriptionForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteDescriptionForegroundDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteDropDownBackground"
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteDropDownBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrush" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrushPointerOver"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrushPressed" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBorderBrushDisabled" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackground" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackgroundPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonBackgroundDisabled"
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForeground" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForegroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForegroundPressed" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteClearButtonForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteAppendForeground"
+                             Color="{StaticResource TextFillColorSecondary}" />
+
+            <Thickness x:Key="SyncfusionAutoCompleteBorderThicknessFocused">2</Thickness>
+
+
+            <!--  Color keys for SfAutoCompleteItem Control  -->
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackground" 
+                             Color="Transparent" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelected" 
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelectedPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelectedPressed"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundSelectedDisabled" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundPointerOver"
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemBackgroundPressed" 
+                             Color="{ThemeResource SystemColorHighlightColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForeground"
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundSelected" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundPointerOver" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundPressed"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorBrush"
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorPointerOverBrush" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorPressedBrush" 
+                             Color="{ThemeResource SystemColorHighlightTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteItemSelectionIndicatorDisabledBrush"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+
+            <!--  Color keys for AutoComplete TokenItem control  -->
+            <Thickness x:Key="SyncfusionAutoCompleteTokenItemBorderThickness">1</Thickness>
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackground" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackgroundPointerOver" 
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackgroundPressed"
+                             Color="{ThemeResource SystemColorWindowColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBackgroundDisabled" 
+                             Color="{ThemeResource SystemColorButtonFaceColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForeground" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForegroundPointerOver" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForegroundPressed" 
+                             Color="{ThemeResource SystemColorWindowTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemForegroundDisabled"
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrush" 
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrushPointerOver"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrushPressed"
+                             Color="{ThemeResource SystemColorButtonTextColor}" />
+            <SolidColorBrush x:Key="SyncfusionAutoCompleteTokenItemBorderBrushDisabled" 
+                             Color="{ThemeResource SystemColorGrayTextColor}" />
+
+            <!--Color keys for Rating control-->
+            <SolidColorBrush x:Key="SyncfusionRatingRatedItemFill" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionRatingUnratedItemFill" 
+                             Color="{StaticResource ControlFillColorTransparent}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemSelectedStateFillPointerOver" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionUnratingItemClearedStateFillPointerOver" 
+                             Color="{StaticResource SubtleFillColorSecondary}" />
+            <SolidColorBrush x:Key="SyncfusionRatingRatedItemStroke" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionRatingUnratedItemStroke" 
+                             Color="{StaticResource ControlStrongFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemSelectedStateStrokePointerOver" 
+                             Color="{StaticResource SystemAccentColor}" />
+            <SolidColorBrush x:Key="SyncfusionUnratingItemClearedStateStrokePointerOver" 
+                             Color="{StaticResource ControlStrongFillColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemToolTipBorderBrush" 
+                             Color="{StaticResource ControlStrokeColorDefault}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemToolTipFont" 
+                             Color="{StaticResource TextFillColorPrimary}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemToolTipBackground" 
+                             Color="{StaticResource SolidBackgroundFillColorTertiary}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemFillDisabled" 
+                             Color="{StaticResource AccentFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionRatingItemStrokeDisabled" 
+                             Color="{StaticResource AccentFillColorDisabled}" />
+            <SolidColorBrush x:Key="SyncfusionRatingPlaceholderRatedItemFill"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionRatingPlaceholderRatedItemStroke"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+
+            <!--Color keys for SfMaskedTextBox control-->
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackgroundPointerOver"
+                             Color="{StaticResource ControlFillColorSecondary}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBorderBrushPointerOver"
+                             Color="{StaticResource ControlStrokeColorDefault}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForegroundPointerOver"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackgroundDisabled"
+                             Color="{StaticResource ControlFillColorDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBorderBrushDisabled"
+                             Color="{StaticResource ControlStrokeColorOnAccentDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForegroundDisabled"
+                             Color="{StaticResource TextFillColorDisabled}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackgroundFocused"
+                             Color="{StaticResource ControlFillColorInputActive}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForegroundFocused"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <StaticResource x:Key="SyncfusionMaskedTextBoxBorderBrushFocused"
+                             ResourceKey="ControlElevationBorderBrushFocused"/>
+            <StaticResource x:Key="SyncfusionMaskedTextBoxBorderBrush"
+                            ResourceKey="ControlElevationBorderBrush"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxForeground"
+                             Color="{StaticResource TextFillColorPrimary}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxBackground"
+                             Color="{StaticResource ControlFillColorDefault}"/>
+            <StaticResource x:Key="SyncfusionMaskedTextBoxBorderBrushError"
+                            ResourceKey="ControlElevationBorderBrushError"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxCriticalIconForeground"
+                            Color="{StaticResource SystemFillColorCritical}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxInformationIconForeground"
+                            Color="{StaticResource SystemAccentColor}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxWarningIconForeground"
+                            Color="{StaticResource SystemFillColorCaution}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedTextBoxSuccessIconForeground"
+                            Color="{StaticResource SystemFillColorSuccess}"/>
+            <SolidColorBrush x:Key="SyncfusionMaskedErrorIconToolTipFont" 
+                            Color="{StaticResource TextFillColorPrimary}"/>
+
+        </ResourceDictionary>
+        
+    </ResourceDictionary.ThemeDictionaries>
+
+    <!--Resources for DatePicker control-->
+    <Thickness x:Key="SyncfusionDatePickerBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionDatePickerPadding">0,-1</Thickness>
+
+
+    <!--Resources for TimePicker control-->
+    <Thickness x:Key="SyncfusionTimePickerBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionTimePickerPadding">0,-1</Thickness>
+
+    <!-- Common resources for Date and time picker control-->
+    <Thickness x:Key="SyncfusionDateTimePickerDefaultBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionPickerBorderThicknessFocused">1</Thickness>
+
+    <!--Resources for SpinnerView / DateTimeSpinnerBase control-->
+    <Thickness x:Key="SyncfusionSpinnerViewBorderThickness">1</Thickness>
+    <x:Double x:Key="SyncfusionSpinnerViewHeaderMinHeight">40</x:Double>
+    <Thickness x:Key="SyncfusionSpinnerViewHeaderBorderThickness">0,0,0,1</Thickness>
+    <Thickness x:Key="SyncfusionSpinnerColumnViewHeaderBorderThickness">0,0,0,1</Thickness>
+
+    <!--Resources for SfDropDownBase control-->
+    <Thickness x:Key="SyncfusionDropDownBasePadding">4</Thickness>
+
+    <!--Resources for DropDownFlyoutPresenter control-->
+    <Thickness x:Key="SyncfusionDropDownFlyoutPresenterBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionDropDownFlyoutPresenterPadding">0</Thickness>
+    <x:Double x:Key="SyncfusionDropDownFlyoutPresenterAcceptDismissHostGridHeight">41</x:Double>
+    <x:Double x:Key="SyncfusionDropDownFlyoutPresenterButtonFontSize">16</x:Double>
+    <x:Double x:Key="SyncfusionDropDownFlyoutPresenterMinWidth">96</x:Double>
+    <x:Double x:Key="SyncfusionDropDownFlyoutPresenterMinHeight">40</x:Double>
+
+    <!--Resources for ColorPalette control-->
+    <Thickness x:Key="SyncfusionColorItemBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionColorItemBorderMargin">1</Thickness>
+    <Thickness x:Key="SyncfusionColorPaletteBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionColorPaletteButtonMargin">0</Thickness>
+    <Thickness x:Key="SyncfusionColorPaletteButtonBorderThickness">0</Thickness>
+    <Thickness x:Key="SyncfusionMoreColorsViewBorderThickness">0</Thickness>
+    <x:Double x:Key="SyncfusionColorPaletteButtonIconSize">28</x:Double>
+    <x:Double x:Key="SyncfusionColorPaletteMoreColorIconSize">20</x:Double>
+    
+    <!--Resources for ColorPicker control-->
+    <Thickness x:Key="SyncfusionColorPickerBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionColorPickerComboBoxBorderThickness">1</Thickness>
+
+    <!--  Resources and color keys for NumberBox and its dependent controls  -->
+    <x:Double x:Key="SyncfusionNumberBoxHeaderFontSize">14</x:Double>
+    <x:Double x:Key="SyncfusionNumberBoxDescriptionFontSize">14</x:Double>
+    <x:Double x:Key="SyncfusionNumberBoxPlaceholderFontSize">14</x:Double>
+    <x:Double x:Key="SyncfusionNumberBoxContentFontSize">14</x:Double>
+    <x:Double x:Key="SyncfusionNumberBoxUpDownPopupIndicatorIconFontSize">12</x:Double>
+    <x:Double x:Key="SyncfusionNumberBoxUpDownIconFontSize">14</x:Double>
+    <x:Double x:Key="SyncfusionNumberBoxPopUpUpDownIconFontSize">16</x:Double>
+    <Thickness x:Key="SyncfusionNumberBoxPopupBorderThickness">1</Thickness>
+    <x:Double x:Key="SyncfusionNumberBoxPopupVerticalOffset">-27</x:Double>
+    <x:Double x:Key="SyncfusionNumberBoxPopupHorizontalOffset">-21</x:Double>
+    <Thickness x:Key="SyncfusionNumberBoxPopupIndicatorMargin">0,0,8,0</Thickness>
+    <Thickness x:Key="SyncfusionNumberBoxBorderThickness">1</Thickness>
+    <x:String x:Key="SyncfusionNumberBoxUpIcon">&#xE70E;</x:String>
+    <x:String x:Key="SyncfusionNumberBoxDownIcon">&#xE70D;</x:String>
+    <x:String x:Key="SyncfusionNumberBoxPopupIndicatorIcon">&#xEC8F;</x:String>
+    <x:String x:Key="SyncfusionNumberBoxDeleteIcon">&#xE10A;</x:String>
+    <Thickness x:Key="SyncfusionNumberBoxHeaderMargin">0,0,0,8</Thickness>
+    <Thickness x:Key="SyncfusionNumberBoxDeleteButtonMargin">-3,5,5,5</Thickness>
+    <Thickness x:Key="SyncfusionNumberBoxPopupUpDownButtonBorderThickness">0</Thickness>
+    <Thickness x:Key="SyncfusionNumberBoxUpDownButtonBorderThickness">1</Thickness>
+    <x:Double x:Key="SyncfusionNumberBoxDeleteIconFontSize">12</x:Double>
+    <CornerRadius x:Key="SyncfusionNumberBoxPopupOverlayCornerRadius">8,8,8,8</CornerRadius>
+    <CornerRadius x:Key="SyncfusionNumberBoxCornerRadius">4</CornerRadius>
+
+    <!--  Common resources for editor controls  -->
+    <Thickness x:Key="SyncfusionHeaderMargin">0,0,0,8</Thickness>
+    
+    <!--Resources for Rating control-->
+    <Thickness x:Key="SyncfusionRatingItemToolTipBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionRatingItemToolTipContentPadding">4</Thickness>
+    <Thickness x:Key="SyncfusionRatingItemBorderPadding">4.0,4.5,4.0,4.5</Thickness>
+    <CornerRadius x:Key="SyncfusionRatingItemToolTipCornerRadius">2</CornerRadius>
+    <x:Double x:Key="SyncfusionRatingRatedItemStrokeThickness">1</x:Double>
+    <x:Double x:Key="SyncfusionRatingUnratedItemStrokeThickness">1</x:Double>
+    <x:Double x:Key="SyncfusionRatingItemSelectedStateStrokeThicknessPointerOver">1</x:Double>
+    <x:Double x:Key="SyncfusionUnratingItemClearedStateStrokeThicknessPointerOver">1</x:Double>
+    <x:Double x:Key="SyncfusionRatingItemStrokeThicknessDisabled">1</x:Double>
+    <x:Double x:Key="SyncfusionRatingPlaceholderRatedItemStrokeThickness">1</x:Double>
+
+    <!--Resources for SfMaskedTextBox control-->
+    <x:Double x:Key="SyncfusionMaskedTextBoxMinWidth">64</x:Double>
+    <x:Double x:Key="SyncfusionMaskedTextBoxMinHeight">32</x:Double>
+    <x:Double x:Key="SyncfusionMaskedTextBoxFontSize">14</x:Double>
+    <x:Double x:Key="SyncfusionMaskedTextBoxErrorIconHeight">16</x:Double>
+    <x:Double x:Key="SyncfusionMaskedTextBoxErrorIconWidth">16</x:Double>
+    <Thickness x:Key="SyncfusionMaskedErrorIconToolTipContentPadding">7,4,7,6</Thickness>
+    <Thickness x:Key="SyncfusionMaskedTextBoxPadding">12,5,6,7</Thickness>
+    <Thickness x:Key="SyncfusionMaskedTextBoxBorderThicknessPointerOver">1</Thickness>
+    <Thickness x:Key="SyncfusionMaskedTextBoxBorderThicknessDisabled">1</Thickness>
+    <Thickness x:Key="SyncfusionMaskedTextBoxBorderThickness">1</Thickness>
+    <Thickness x:Key="SyncfusionMaskedTextBoxBorderThicknessFocused">1,1,1,2</Thickness>
+    <Thickness x:Key="SyncfusionMaskedTextBoxBorderThicknessError">0,0,0,2</Thickness>
+    <CornerRadius x:Key="SyncfusionMaskedTextBoxCornerRadius">4</CornerRadius>
+
+</ResourceDictionary>
